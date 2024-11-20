@@ -9,8 +9,8 @@ import Label from "../Components/Label";
 
 /* Images */
 import InnotaCover from "../assets/images/InnotaCover.png";
-import Axis1 from "../assets/images/Axis1.gif";
-import Axis2 from "../assets/images/Axis2.gif";
+import Axis1 from "../assets/images/AxisContent_1.png";
+import Axis2 from "../assets/images/AxisContent_1.png";
 import Innota3 from "../assets/images/Innota3.png";
 import AxisContent_1 from "../assets/images/AxisContent_1.png";
 import AxisContent2 from "../assets/images/AxisContent_2.png";
