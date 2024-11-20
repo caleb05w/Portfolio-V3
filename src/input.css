@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Variables */
+/* This was taught to me by my comp sci friend Harjot, who is one of my buddies who I've done hackathons with. */
+:root {
+  --purple: #5d4ae1;
+  --blue: #4e7dc3;
+  --emerald: #37c6b3;
+  --red: #ff6969;
+  --orange: #ef7e46;
+  --yellow: #ffdc58;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: none;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: "Apfel Grotesk", sans-serif;
+  font-weight: 700;
+  line-height: 95%;
+  color: #383737;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: "Apfel Grotesk", sans-serif;
+  font-weight: 700;
+  line-height: 150%;
+  color: black;
+}
+
+h3 {
+  font-size: 24px;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-weight: 700;
+  line-height: 150%;
+  color: black;
+  letter-spacing: 1%;
+}
+
+h4 {
+  font-size: 20px;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 150%;
+  color: #aaa8a8;
+}
+
+h5 {
+  font-size: 16px;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-weight: 700;
+  line-height: 150%;
+  color: #aaa8a8;
+}
+
+p {
+  font-size: 24px;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 1%;
+  color: black;
+}
+
+@media only screen and (max-width: 60rem) {
+  h2 {
+    font-size: 30px;
+    letter-spacing: -1px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
