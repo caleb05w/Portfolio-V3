@@ -30,7 +30,7 @@ function Axis() {
       <div className="w-[100vw] flex flex-row justify-center">
         <div className="lg:w-[65vw] w-[80vw] flex flex-col gap-[4rem] lg:gap-[9.375rem]">
           <div className=" flex flex-col gap-[2.125rem]">
-            <h5>Director of Design | 2024</h5>
+            <h5>Director of Design | 20242</h5>
             <h1>
               Re-Defining the Narrative: Curating a new Brand to Invoke Awe.
             </h1>
