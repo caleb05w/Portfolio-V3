@@ -9,10 +9,14 @@ function ContentBox({
   LabelColor,
   Image,
   Speed,
+  ID,
 }) {
   return (
-    <div>
-      <div className="lg:w-[65vw] w-[80vw] flex flex-col gap-[1.5rem] lg:gap-[2.5rem]">
+    <section>
+      <div
+        className="lg:w-[65vw] w-[80vw] flex flex-col gap-[1.5rem] lg:gap-[2.5rem]"
+        id={ID}
+      >
         <Textbox
           Title={Title}
           Body={Body}
@@ -25,7 +29,7 @@ function ContentBox({
           <img className=" w-full h-fit" src={Image} loading={Speed}></img>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

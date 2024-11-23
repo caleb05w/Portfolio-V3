@@ -24,6 +24,8 @@ function Home() {
                   Text="Metalab"
                   Link="https://www.metalab.com/"
                   Weight={"h3"}
+                  Color={"--purple"}
+                  HoverColor={"--purple"}
                 ></Hyperlink>
               </div>
             </div>

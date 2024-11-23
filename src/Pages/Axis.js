@@ -6,6 +6,7 @@ import ContainerImage from "../Components/ContainerImage";
 import Textbox from "../Components/Textbox";
 import MultiContentBox from "../Components/MultiContentBox";
 import Label from "../Components/Label";
+import Hyperlink from "../Components/Hyperlink";
 
 /* Images */
 import AxisCover from "../assets/images/Animated/AxisCover.gif";
@@ -24,23 +25,82 @@ import AxisContent_8 from "../assets/images/Axis_Content_8.png";
 import AxisContent_9 from "../assets/images/AxisContent_9.png";
 import AxisContent_10 from "../assets/images/AxisContent_10.png";
 import AxisContent_11 from "../assets/images/AxisContent_11.png";
+import AxisContent_12 from "../assets/images/AxisContent_12.png";
 
 function Axis() {
   return (
     <div>
+      <div className=" fixed  w-[17%] flex flex-row justify-center top-0">
+        <div className="h-[100vh] mt-[15vh] flex flex-col gap-[1.5%]">
+          <h5 className="text-my-black">Hello! I'm a sidebar. </h5>
+          <div className="flex flex-col min-h-[20vh]">
+            <div className="flex flex-col gap-[1%] h-full">
+              <Hyperlink
+                Text={"Problem"}
+                Link={"#problem"}
+                Color={"my-gray"}
+                HoverColor={"--purple"}
+                Display={"none"}
+              />
+              <Hyperlink
+                Text={"Solution Ideation"}
+                Link={"#solution-ideation"}
+                Color={"my-gray"}
+                HoverColor={"--purple"}
+                Display={"none"}
+              />
+              <Hyperlink
+                Text={"Implementation Strategy"}
+                Link={"#implementation-strategy"}
+                Color={"my-gray"}
+                HoverColor={"--purple"}
+                Display={"none"}
+              />
+              <Hyperlink
+                Text={"Design Decisions"}
+                Link={"#design-decisions"}
+                Color={"my-gray"}
+                HoverColor={"--purple"}
+                Display={"none"}
+              />
+              <Hyperlink
+                Text={"Work Showcase"}
+                Link={"#work-showcase"}
+                Color={"my-gray"}
+                HoverColor={"--purple"}
+                Display={"none"}
+              />
+              <Hyperlink
+                Text={"Impact"}
+                Link={"#impact"}
+                Color={"my-gray"}
+                HoverColor={"--purple"}
+                Display={"none"}
+              />
+            </div>
+          </div>
+          <Hyperlink
+            Text={"Back to Top"}
+            Link={"#Top"}
+            Color={"my-gray"}
+            HoverColor={"--purple"}
+          />
+        </div>
+      </div>
+
       <div className="w-[100vw] flex flex-row justify-center">
         <div className="lg:w-[65vw] w-[80vw] flex flex-col gap-[4rem] lg:gap-[9.375rem]">
-          <div className=" flex flex-col gap-[2.125rem]">
+          <div className=" flex flex-col gap-[2.125rem]" id="top">
             <h5>Director of Design | 2024</h5>
             <h1>
-              Re-Defining the Narrative: Curating a new Brand to Invoke Awe.
+              Re-Defining a Narrative: Curating a new Brand to Invoke Awe.
             </h1>
-            <div className=" flex flex-row gap-[1rem]">
+            {/* <div className=" flex flex-row gap-[1rem]">
               <Label name={"UX/UI"} color={"--red"} />
               <Label name={"Front End"} color={"--blue"} />
               <Label name={"Product Design"} color={"--purple"} />
               <Label name={"End-to-End"} color={"--emerald"} />
-            </div>
+            </div> */}
             <ContainerImage Image={AxisCover}></ContainerImage>
             <div className="flex flex-row justify-between">
               <div className="flex flex-col">
@@ -49,7 +109,7 @@ function Axis() {
               </div>
               <div className="flex flex-col">
                 <h4>Team</h4>
-                <p>Director, 2 Design, 1 Media</p>
+                <p>Director (Me), 2 Design, 1 Media</p>
               </div>
               <div className="flex flex-col">
                 <h4>Tools</h4>
@@ -57,7 +117,7 @@ function Axis() {
               </div>
               <div className="flex flex-col">
                 <h4>Duration</h4>
-                <p>4 Months ongoing</p>
+                <p>4 Months, Ongoing</p>
               </div>
             </div>
           </div>
@@ -80,6 +140,7 @@ function Axis() {
           </div>
 
           <ContentBox
+            ID={"problem"}
             Title={"The Problem"}
             Body={
               "Axis’s current brand identity was cohesive, and disorganized, and lacked any compelling or distinguishable traits outside of the insistent use of blue, lacking a unifying art direction. "
@@ -100,11 +161,12 @@ function Axis() {
           ></ContentBox>
 
           <ContentBox
+            ID={"solution-ideation"}
             Title={"What Now?"}
             Body={
               "With these two pain points, I created a unifying vision to guide my art direction."
             }
-            LabelName={""}
+            LabelName={"Solution Ideation"}
             LabelColor={"--orange"}
             Image={AxisContent_3}
           ></ContentBox>
@@ -140,6 +202,7 @@ function Axis() {
           ></ContentBox>
 
           <ContentBox
+            ID={"implementation-strategy"}
             Title={" Strategies of Implementation"}
             Body={
               "To bring this vision to life, I came up with 3 tangible initiatives to drive my team and I’s progress through the rest of the year."
@@ -150,6 +213,7 @@ function Axis() {
           ></ContentBox>
 
           <ContentBox
+            ID={"design-decisions"}
             Title={" Design Pillars"}
             Body={
               "From the mood board, I developed three pillars to guide the art direction, inspired by stars in the night sky, luminescence to draw wonder, Noise to convey movement, and Constellations to engage empty space."
@@ -170,6 +234,7 @@ function Axis() {
           ></ContentBox>
 
           <ContentBox
+            ID={"work-showcase"}
             Title={" Work Showcase"}
             Body={
               "After finalizing the graphical vision, I began translating it into posters for our various initiatives. The busy noise, blue highlights, and thin lines became an Axis trademark."
@@ -190,15 +255,18 @@ function Axis() {
           ></ContentBox>
 
           <ContentBox
+            ID={"impact"}
             Title={"⭐ My Impact"}
             Body={
               "The rebrand was a success, launched in July, it boosted LinkedIn impressions by 500%, Instagram reach by 101%, and applications by 40%. The feedback from the team and alumni was inspiring."
             }
             LabelName={"Key Take Away(s)"}
             LabelColor={"--yellow"}
+            Image={AxisContent_12}
           ></ContentBox>
 
           {/* <MultiContentBox
+          ID={"reflection"}
             Title={"⭐ What I learned"}
             Reflection1={"💡 Designing within Constraints"}
             Body1={

@@ -9,12 +9,14 @@ function Navbar() {
       ></div>
       <div className="flex flex-row justify-between w-full z-30 pt-[2%] px-[3%] fixed">
         <a href="/">
-          <h5 className="text-red-500">Caleb Wu</h5>
+          <h5 className="text-my-purple">Caleb Wu</h5>
         </a>
         <div className="flex flex-row w-[20%] justify-between z-10">
-          <h5 className="text-black">About</h5>
-          <h5 className="text-black">Resume</h5>
-          <h5 className="text-black">Gallery</h5>
+          <h5 className="">About</h5>
+          <h5 className="">Resume</h5>
+          <a href="/gallery">
+            <h5 className="">Gallery</h5>
+          </a>
         </div>
       </div>
       <div className="pb-[5%]"></div>
