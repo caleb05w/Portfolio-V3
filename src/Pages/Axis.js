@@ -8,10 +8,11 @@ import MultiContentBox from "../Components/MultiContentBox";
 import Label from "../Components/Label";
 
 /* Images */
-import InnotaCover from "../assets/images/InnotaCover.png";
-import Axis1 from "../assets/images/AxisContent_1.png";
-import Axis2 from "../assets/images/AxisContent_1.png";
-import Innota3 from "../assets/images/Innota3.png";
+import AxisCover from "../assets/images/Animated/AxisCover.gif";
+import Axis1 from "../assets/images/Animated/Axis1.gif";
+import Axis2 from "../assets/images/Animated/Axis2.gif";
+import Axis3 from "../assets/images/Animated/Axis3.gif";
+
 import AxisContent_1 from "../assets/images/AxisContent_1.png";
 import AxisContent2 from "../assets/images/AxisContent_2.png";
 import AxisContent_3 from "../assets/images/AxisContent_3.png";
@@ -40,7 +41,7 @@ function Axis() {
               <Label name={"Product Design"} color={"--purple"} />
               <Label name={"End-to-End"} color={"--emerald"} />
             </div>
-            <ContainerImage Image={InnotaCover}></ContainerImage>
+            <ContainerImage Image={AxisCover}></ContainerImage>
             <div className="flex flex-row justify-between">
               <div className="flex flex-col">
                 <h4>Client</h4>
@@ -60,11 +61,6 @@ function Axis() {
               </div>
             </div>
           </div>
-          <div className="flex flex-row h-full w-fit">
-            <ContainerImage Image={Axis1}></ContainerImage>
-            <ContainerImage Image={Axis2}></ContainerImage>
-          </div>
-          <ContainerImage Image={Innota3}></ContainerImage>
 
           <div className="flex flex-col gap-[2.5rem]">
             <Textbox
@@ -73,6 +69,14 @@ function Axis() {
                 "Axis Consulting is a student-run pro bono business club that pairs aspiring consultants with real world clients."
               }
             ></Textbox>
+          </div>
+
+          <div className="flex flex-col gap-[1%]">
+            <div className="flex flex-row h-full w-fit gap-[1%]">
+              <ContainerImage Image={Axis1}></ContainerImage>
+              <ContainerImage Image={Axis2}></ContainerImage>
+            </div>
+            <ContainerImage Image={Axis3}></ContainerImage>
           </div>
 
           <ContentBox

@@ -6,8 +6,13 @@ module.exports = {
     "./public/index.html",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "my-purple": "#00000",
+        "my-gray": "#aaa8a8",
+      },
+    },
   },
   plugins: [],
 };
-Input
+Input;

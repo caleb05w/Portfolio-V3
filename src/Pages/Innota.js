@@ -25,6 +25,9 @@ import InnotaContent_10 from "../assets/images/InnotaContent_10.png";
 import InnotaContent_11 from "../assets/images/InnotaContent_11.png";
 
 function Innota() {
+  // const InnotaCover =
+  //   "https://dash.cloudflare.com/13c71e6e0afbadf78c6fa2572b98316f/r2/default/buckets/portfolio/objects/InnotaCover.png";
+
   return (
     <div>
       <div className="w-[100vw] flex flex-row justify-center">
@@ -33,12 +36,18 @@ function Innota() {
             <h5>Product Design Intern | Summer 2023</h5>
             <h1>A User-Centric Redesign to Drive Engagement and Clarity</h1>
             <div className=" flex flex-row gap-[1rem]">
+              <div className="border-2 border-my-gray rounded-[999rem] px-[0.5rem] py-[0.25rem] h-fit">
+                <h5 className="">UX/UI</h5>
+              </div>
               <Label name={"UX/UI"} color={"--red"} />
               <Label name={"Front End"} color={"--blue"} />
               <Label name={"Product Design"} color={"--purple"} />
               <Label name={"End-to-End"} color={"--emerald"} />
             </div>
-            <ContainerImage Image={InnotaCover}></ContainerImage>
+            <ContainerImage
+              Image={InnotaCover}
+              Speed={"eager"}
+            ></ContainerImage>
             <div className="flex flex-row justify-between">
               <div className="flex flex-col">
                 <h4>Client</h4>
@@ -58,9 +67,9 @@ function Innota() {
               </div>
             </div>
           </div>
-          <ContainerImage Image={Innota1}></ContainerImage>
-          <ContainerImage Image={Innota2}></ContainerImage>
-          <ContainerImage Image={Innota3}></ContainerImage>
+          <ContainerImage Image={Innota1} Speed={"lazy"}></ContainerImage>
+          <ContainerImage Image={Innota2} Speed={"lazy"}></ContainerImage>
+          <ContainerImage Image={Innota3} Speed={"lazy"}></ContainerImage>
 
           <div className="flex flex-col gap-[2.5rem]">
             <Textbox
@@ -89,6 +98,7 @@ function Innota() {
             LabelName={"Problem Discovery"}
             LabelColor={"--red"}
             Image={mindmap}
+            Speed={"lazy"}
           ></ContentBox>
 
           <ContentBox
@@ -102,6 +112,7 @@ function Innota() {
             LabelName={"Problem Discovery"}
             LabelColor={"--red"}
             Image={InnotaContent2}
+            Speed={"lazy"}
           ></ContentBox>
 
           <ContentBox
@@ -112,6 +123,7 @@ function Innota() {
             LabelName={"Problem Discovery"}
             LabelColor={"--orange"}
             Image={InnotaContent_3}
+            Speed={"lazy"}
           ></ContentBox>
 
           <ContentBox
@@ -120,6 +132,7 @@ function Innota() {
               "Moving forward, I created a singular product vision to unite my goals for the rest of the project duration, developing a tangible scope to drive my progress forward."
             }
             Image={InnotaContent_4}
+            Speed={"lazy"}
           ></ContentBox>
 
           <ContentBox
@@ -130,6 +143,7 @@ function Innota() {
             LabelName={"Solution Ideation"}
             LabelColor={"--orange"}
             Image={InnotaContent_5}
+            Speed={"lazy"}
           ></ContentBox>
 
           <ContentBox
@@ -143,6 +157,7 @@ function Innota() {
             LabelName={"Solution Implementation #1"}
             LabelColor={"--purple"}
             Image={InnotaContent_6}
+            Speed={"lazy"}
           ></ContentBox>
 
           <ContentBox
@@ -156,6 +171,7 @@ function Innota() {
             LabelName={"Solution Implementation #2"}
             LabelColor={"--purple"}
             Image={InnotaContent_7}
+            Speed={"lazy"}
           ></ContentBox>
 
           <ContentBox
@@ -166,6 +182,7 @@ function Innota() {
             LabelName={"Solution Implementation #3"}
             LabelColor={"--purple"}
             Image={InnotaContent_8}
+            Speed={"lazy"}
           ></ContentBox>
 
           <ContentBox
@@ -176,6 +193,7 @@ function Innota() {
             LabelName={"Solution Showcase"}
             LabelColor={"--purple"}
             Image={InnotaContent_9}
+            Speed={"lazy"}
           ></ContentBox>
 
           <ContentBox
@@ -186,6 +204,7 @@ function Innota() {
             LabelName={"Solution Showcase"}
             LabelColor={"--purple"}
             Image={InnotaContent_10}
+            Speed={"lazy"}
           ></ContentBox>
 
           <ContentBox
@@ -199,6 +218,7 @@ function Innota() {
             LabelName={"Solution Showcase"}
             LabelColor={"--turquoise"}
             Image={InnotaContent_11}
+            Speed={"lazy"}
           ></ContentBox>
 
           <ContentBox
@@ -211,6 +231,7 @@ function Innota() {
             }
             LabelName={"Key Take Away(s)"}
             LabelColor={"--yellow"}
+            Speed={"lazy"}
           ></ContentBox>
 
           <MultiContentBox

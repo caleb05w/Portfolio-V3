@@ -9,12 +9,11 @@ import {
 
 //pages
 import Home from "../Pages/Home.js";
+import Innota from "../Pages/Innota.js";
+import Axis from "../Pages/Axis.js";
 
 //Componnets
 // import { AnimatePresence } from "framer-motion";
-import Navbar from "./Navbar.js";
-import Innota from "../Pages/Innota.js";
-import Axis from "../Pages/Axis.js";
 
 function AnimatedRoutes() {
   const location = useLocation();

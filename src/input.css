@@ -11,7 +11,13 @@
   --red: #ff6969;
   --orange: #ef7e46;
   --yellow: #ffdc58;
+  --rounded: 0.25rem;
 }
+
+/* a {
+  text-decoration: underline;
+  color: var(--purple);
+} */
 
 body {
   margin: 0;
@@ -28,7 +34,7 @@ html {
 h1 {
   font-size: 60px;
   font-family: "Apfel Grotesk", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 95%;
   color: #383737;
 }
