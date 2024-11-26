@@ -19,7 +19,7 @@ function Navbar() {
           </a>
         </div>
       </div>
-      <div className="pb-[5%]"></div>
+    <div className="pb-[3%]"></div>
     </nav>
   );
 }

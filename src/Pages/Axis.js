@@ -30,7 +30,7 @@ import AxisContent_12 from "../assets/images/AxisContent_12.png";
 function Axis() {
   return (
     <div>
-      <div className=" fixed  w-[17%] flex flex-row justify-center top-0">
+      <nav className=" fixed  w-[17%] flex flex-row justify-center top-0">
         <div className="h-[100vh] mt-[15vh] flex flex-col gap-[1.5%]">
           <h5 className="text-my-black">Hello! I'm a sidebar. </h5>
           <div className="flex flex-col min-h-[20vh]">
@@ -85,6 +85,29 @@ function Axis() {
             Color={"my-gray"}
             HoverColor={"--purple"}
           />
+        </div>
+      </nav>
+
+      <div className=" fixed   w-[17%] flex flex-row justify-center top-[90vh]">
+        <div className="h-[100vh]  w-[70%] flex flex-col gap-[1.5%]">
+          <div className="flex flex-col min-h-[20vh]">
+            <div className="flex flex-col gap-[1%] h-full">
+              <Hyperlink
+                Text={"Instagram"}
+                Link={"#problem"}
+                Color={"my-gray"}
+                HoverColor={"--purple"}
+                Display={"none"}
+              />
+              <Hyperlink
+                Text={"Website"}
+                Link={"#solution-ideation"}
+                Color={"my-gray"}
+                HoverColor={"--purple"}
+                Display={"none"}
+              />
+            </div>
+          </div>
         </div>
       </div>
 

@@ -34,10 +34,11 @@ html {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 45px;
   font-family: "Apfel Grotesk", sans-serif;
   font-weight: 600;
-  line-height: 95%;
+  letter-spacing: -1px;
+  line-height: 100%;
   color: #383737;
 }
 
