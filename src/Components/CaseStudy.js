@@ -29,7 +29,7 @@ function CaseStudy({ Title, Body, Image, Link, Year, Skills }) {
                   <img
                     src={Image}
                     alt="Innota"
-                    className="w-full h-full object-cover  ease-in-out duration-300 transform group-hover:scale-110 group-hover:brightness-[35%]"
+                    className="w-full h-full object-cover  ease-in-out duration-300 transform group-hover:scale-110 group-hover:brightness-[20%]"
                   ></img>
                 </div>
               </div>

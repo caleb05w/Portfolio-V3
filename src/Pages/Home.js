@@ -16,16 +16,16 @@ import { CiMail } from "react-icons/ci";
 
 function Home() {
   return (
-    <div>
-      <div className="w-[100vw] flex flex-row justify-center pb-[8vh]">
-        <div className="w-[95vw] flex flex-row gap-[4rem] lg:gap-[4rem] ">
-          <div className=" h-[80vh] w-[50vw]">
-            <div className=" flex flex-col h-[83vh]  justify-between fixed w-[21vw]">
+    <div id="top">
+      <div className="w-[100vw] flex flex-row justify-center pb-[3vh] lg:pb-[8vh]">
+        <div className="lg:w-[95vw] w-[90vw] flex flex-col lg:flex-row gap-[2rem] lg:gap-[4rem] ">
+          <div className="  h-fit lg:h-[80vh] w-[50vw]">
+            <div className=" flex flex-col h-fit lg:h-[83vh] justify-between relative lg:fixed w-[100vw] lg:w-[21vw]">
               <div className="flex flex-col gap-[2rem]   ">
                 <h1>
                   Hi, I’m Caleb I’m a product designer based in Vancouver, BC.{" "}
                 </h1>
-                <div className="flex flex-row gap-[1%]">
+                <div className="flex flex-row gap-[0.5rem]">
                   <h5>Incoming Product Designer at </h5>{" "}
                   <Hyperlink
                     Text="Metalab"
@@ -36,7 +36,7 @@ function Home() {
                   ></Hyperlink>
                 </div>
               </div>
-              <div className="flex gap-[0.5rem]">
+              <div className="hidden lg:flex gap-[0.5rem]">
                 <FaGithub className="text-2xl text-my-gray" />
                 <FaLinkedin className="text-2xl text-my-gray" />
                 <CiMail className="text-2xl text-my-gray" />
@@ -45,7 +45,7 @@ function Home() {
           </div>
           <div className=" flex flex-col gap-[1.25rem] ">
             {/* <Label name="Case Studies" color="--purple" /> */}
-            <div className="flex lg:flex-col flex-col w-[70vw] gap-[1rem]">
+            <div className="flex lg:flex-col flex-col w-full lg:w-[70vw] gap-[1rem]">
               <CaseStudy
                 Title="Innota Technologies"
                 Body="Compeling prompt to read"
@@ -63,6 +63,16 @@ function Home() {
                 Year="2024"
                 Skills="UI/UX Design | Branding | Web Development"
               ></CaseStudy>
+            </div>
+          </div>
+          <div className="flex w-full justify-between lg:hidden gap-[0.5rem]">
+            <a href="#top">
+              <h5> Back to top </h5>
+            </a>
+            <div className="flex ">
+              <FaGithub className="text-2xl text-my-gray" />
+              <FaLinkedin className="text-2xl text-my-gray" />
+              <CiMail className="text-2xl text-my-gray" />
             </div>
           </div>
         </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 function Navbar() {
   return (
-    <nav className="mb-[3%]">
+    <nav className="mb-[15%] lg:mb-[3%]">
       <div
         className="flex flex-row justify-between px-[3%] fixed h-[10%] w-full 
        top-0 left-0 bg-white/20  [mask-image:linear-gradient(180deg,_rgba(255,255,255,1)_20%,_rgba(255,255,255,0)_80%)]  backdrop-blur-[8px]"
@@ -19,7 +19,7 @@ function Navbar() {
           </a>
         </div>
       </div>
-    <div className="pb-[3%]"></div>
+      <div className="pb-[3%]"></div>
     </nav>
   );
 }
