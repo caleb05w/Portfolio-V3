@@ -18,7 +18,7 @@ function Home() {
   return (
     <div id="top" className="bg-gray-100">
       <div className="w-[100vw] flex flex-row justify-center pb-[3vh] lg:pb-[4vh]">
-        <div className="lg:w-[95vw] w-[90vw] flex flex-col lg:flex-row gap-[2rem] lg:gap-[4rem] ">
+        <div className="lg:w-[95vw] w-[100vw] lg:px-[0%] px-[7%] flex flex-col lg:flex-row gap-[2rem] lg:gap-[4rem] ">
           <div className="  h-fit lg:h-[80vh] w-[50vw]">
             <div className=" flex flex-col h-fit lg:h-[85vh] justify-between relative lg:fixed w-[100vw] lg:w-[21vw]">
               <div className="flex flex-col gap-[2rem]   ">
@@ -58,6 +58,8 @@ function Home() {
                 Year="2024"
                 Skills=" Rebrand | Motion Graphics | Art Direction "
                 AlrText="Link to Axis Consulting Case Study"
+                Height="550px"
+                Width="550px"
               ></CaseStudy>
               <CaseStudy
                 Title="Innota Technologies"
@@ -67,6 +69,8 @@ function Home() {
                 Year="2024"
                 Skills="Product Design | User Research "
                 AlrText="Link to Innota Technologies Case Study"
+                Height="1341px"
+                Width="724px"
               ></CaseStudy>
             </div>
           </div>

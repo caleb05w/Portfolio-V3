@@ -3,7 +3,7 @@ import ImageContainer from "./ContainerImage";
 
 function CaseStudy({ Title, Body, Image, Link, Year, Skills, AltText }) {
   return (
-    <div className="flex flex-col gap-[1rem]">
+    <section className="flex flex-col gap-[1rem]">
       <div className="rounded-[0.5rem] overflow-hidden ">
         <a href={Link} className="hover:cursor-pointer">
           <div className="group">
@@ -29,7 +29,7 @@ function CaseStudy({ Title, Body, Image, Link, Year, Skills, AltText }) {
                   <img
                     src={Image}
                     alt={AltText}
-                    className="w-full h-[50vh] lg:min-h-[70vh] object-cover  ease-in-out duration-300 transform group-hover:scale-110 group-hover:brightness-[20%]"
+                    className="w-full h-[50vh] lg:min-h-[70vh] object-cover  ease-in-out duration-300 transform group-hover:scale-110 brightness-[80%] group-hover:brightness-[40%]"
                   ></img>
                 </div>
               </div>
@@ -37,7 +37,7 @@ function CaseStudy({ Title, Body, Image, Link, Year, Skills, AltText }) {
           </div>{" "}
         </a>
       </div>
-    </div>
+    </section>
   );
 }
 

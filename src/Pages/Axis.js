@@ -5,8 +5,8 @@ import ContentBox from "../Components/ContentBox";
 import ContainerImage from "../Components/ContainerImage";
 import Textbox from "../Components/Textbox";
 import MultiContentBox from "../Components/MultiContentBox";
-import Label from "../Components/Label";
 import Hyperlink from "../Components/Hyperlink";
+import { FaArrowRight } from "react-icons/fa";
 
 /* Images */
 import AxisCover from "../assets/images/Animated/AxisCover.gif";
@@ -140,7 +140,7 @@ function Axis() {
         </div>
       </div>
 
-      <div className="w-[100vw] flex flex-row justify-end px-[1.5%]">
+      <div className="w-[100vw] flex flex-row justify-end lg:px-[3%] md:px-[3%] px-[7%]">
         <div className="lg:w-[70vw] w-[95vw] flex flex-col gap-[4rem] md-[7rem] lg:gap-[9.375rem]">
           <div className=" flex flex-col gap-[1rem] lg:gap-[2.125rem]" id="top">
             <h5>Director of Design | 2024</h5>
@@ -186,8 +186,8 @@ function Axis() {
             ></Textbox>
           </div>
 
-          <div className="flex flex-col gap-[1%]">
-            <div className="flex flex-row h-full w-fit gap-[1%]">
+          <div className="flex flex-col gap-[1rem]">
+            <div className="flex lg:flex-row flex-col h-fit w-full gap-[1rem]">
               <ContainerImage
                 Image={Axis1}
                 alt={"Animated Gif Showcase of Axis Consulting Events"}
@@ -349,15 +349,14 @@ function Axis() {
             }
           ></ContentBox>
 
-          <div className="w-[100%] flex flex-row justify-center">
+          <div className="w-[100%] flex flex-row justify-center mb-[20%]">
             <div className="flex flex-col gap-[1rem]">
-              {/* <h2>What's next?</h2> */}
-              <Hyperlink
-                Text={"Innota Technologies"}
-                Link={"/Innota"}
-                Color={"my-gray"}
-                HoverColor={"--purple"}
-              ></Hyperlink>
+              <button className="text-white bg-my-purple-dark px-[1rem] py-[0.5rem] rounded-full  ">
+                <a href="/Innota">Innota Technologies</a>
+                <span className="inline-block ml-[1rem]">
+                  <FaArrowRight />
+                </span>
+              </button>
             </div>
           </div>
           {/* <MultiContentBox

@@ -72,7 +72,8 @@ h5 {
   font-family: "Helvetica", "Arial", sans-serif;
   font-weight: 700;
   line-height: 150%;
-  color: #aaa8a8;
+  color: #b5b4b4;
+  letter-spacing: 0.5px;
 }
 
 p {
@@ -88,7 +89,7 @@ p {
   h1 {
     font-size: 33px;
   }
-  
+
   h2 {
     font-size: 30px;
     letter-spacing: -1px;
