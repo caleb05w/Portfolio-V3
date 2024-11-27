@@ -36,10 +36,14 @@ function Home() {
                   ></Hyperlink>
                 </div>
               </div>
-              <div className="hidden lg:flex gap-[0.5rem]">
-                <FaGithub className="text-2xl text-my-gray hover:text-my-purple ease-in-out duration-300 hover:cursor-pointer" />
-                <FaLinkedin className="text-2xl text-my-gray hover:text-my-purple ease-in-out duration-300 hover:cursor-pointer" />
-                <CiMail className="text-2xl text-my-gray hover:text-my-purple ease-in-out duration-300 hover:cursor-pointer" />
+              <div className="hidden lg:flex gap-[0.5rem]" target="_blank">
+                <a href="https://github.com/caleb05w">
+                  <FaGithub className="text-2xl text-my-gray hover:text-my-purple-dark ease-in-out duration-300 hover:cursor-pointer" />
+                </a>
+                <a href="https://Linkedin.com/in/caleb-wu1" target="_blank">
+                  <FaLinkedin className="text-2xl text-my-gray hover:text-my-purple-dark ease-in-out duration-300 hover:cursor-pointer" />
+                </a>
+                <CiMail className="text-2xl text-my-gray hover:text-my-purple-dark ease-in-out duration-300 hover:cursor-pointer" />
               </div>
             </div>
           </div>
@@ -47,21 +51,22 @@ function Home() {
             {/* <Label name="Case Studies" color="--purple" /> */}
             <div className="flex lg:flex-col flex-col w-full lg:w-[70vw] gap-[1rem]">
               <CaseStudy
-                Title="Innota Technologies"
-                Body="Compeling prompt to read"
-                Image={InnotaCover}
-                Link="/Innota"
-                Year="2024"
-                Skills="UI/UX Design | Branding | Web Development"
-              ></CaseStudy>
-
-              <CaseStudy
                 Title="Axis Consulting"
                 Body="Designing a Narrative to Inspire Creativity"
                 Image={AxisCover}
                 Link="/Axis"
                 Year="2024"
-                Skills="UI/UX Design | Branding | Web Development"
+                Skills=" Rebrand | Motion Graphics | Art Direction "
+                AlrText="Link to Axis Consulting Case Study"
+              ></CaseStudy>
+              <CaseStudy
+                Title="Innota Technologies"
+                Body="User-Centric Redesign for Clarity and Engagement"
+                Image={InnotaCover}
+                Link="/Innota"
+                Year="2024"
+                Skills="Product Design | User Research "
+                AlrText="Link to Innota Technologies Case Study"
               ></CaseStudy>
             </div>
           </div>
@@ -70,9 +75,9 @@ function Home() {
               <h5> Back to top </h5>
             </a>
             <div className="flex ">
-              <FaGithub className="text-2xl text-my-gray hover:text-my-purple ease-in-out duration-300 hover:cursor-pointer" />
-              <FaLinkedin className="text-2xl text-my-gray hover:text-my-purple ease-in-out duration-300 hover:cursor-pointer" />
-              <CiMail className="text-2xl text-my-gray hover:text-my-purple ease-in-out duration-300 hover:cursor-pointer" />
+              <FaGithub className="text-2xl text-my-gray hover:text-my-purple-dark ease-in-out duration-300 hover:cursor-pointer" />
+              <FaLinkedin className="text-2xl text-my-gray hover:text-my-purple-dark ease-in-out duration-300 hover:cursor-pointer" />
+              <CiMail className="text-2xl text-my-gray hover:text-my-purple-dark ease-in-out duration-300 hover:cursor-pointer" />
             </div>
           </div>
         </div>

@@ -41,7 +41,7 @@ function Axis() {
         </button>
       </div> */}
       <nav
-        className={`fixed lg:bg-white w-[100vw] lg:w-[20%] flex flex-row justify-start md:justify-center lg:justify-center ${
+        className={`fixed lg:bg-white w-[100vw] lg:w-[20%] flex flex-row justify-start md:justify-center lg:justify-center lg:pb-0 pb-[3vh] ${
           isOpen ? "top-[69vh]" : "top-[94vh]"
         } lg:top-0 lg:overflow-hidden lg:overscroll-none overscroll-x-auto overflow-x-auto lg:p-0 p-[5%] py-[0.25rem] bg-my-purple-dark rounded-[0.5rem] ease-in-out duration-300`}
       >
@@ -153,7 +153,10 @@ function Axis() {
               <Label name={"Product Design"} color={"--purple"} />
               <Label name={"End-to-End"} color={"--emerald"} />
             </div> */}
-            <ContainerImage Image={AxisCover}></ContainerImage>
+            <ContainerImage
+              Image={AxisCover}
+              alt={"Cover Gif for Axis Consulting Case Study"}
+            ></ContainerImage>
             <div className="flex flex-col lg:flex-row justify-between">
               <div className="flex flex-col">
                 <h4>Client</h4>
@@ -185,10 +188,19 @@ function Axis() {
 
           <div className="flex flex-col gap-[1%]">
             <div className="flex flex-row h-full w-fit gap-[1%]">
-              <ContainerImage Image={Axis1}></ContainerImage>
-              <ContainerImage Image={Axis2}></ContainerImage>
+              <ContainerImage
+                Image={Axis1}
+                alt={"Animated Gif Showcase of Axis Consulting Events"}
+              ></ContainerImage>
+              <ContainerImage
+                Image={Axis2}
+                alt={"Animated Gif Showcase of Axis Consulting Events"}
+              ></ContainerImage>
             </div>
-            <ContainerImage Image={Axis3}></ContainerImage>
+            <ContainerImage
+              Image={Axis3}
+              alt={"Animated Gif Showcase of Axis Consulting Events"}
+            ></ContainerImage>
           </div>
 
           <ContentBox
@@ -200,6 +212,7 @@ function Axis() {
             LabelName={"The Issue"}
             LabelColor={"--red"}
             Image={AxisContent_1}
+            Alt={"Axis Consulting's Current Branding"}
           ></ContentBox>
 
           <ContentBox
@@ -210,6 +223,9 @@ function Axis() {
             LabelName={"Problem Discovery #1"}
             LabelColor={"--red"}
             Image={AxisContent2}
+            Alt={
+              "Compilation of SFU Business Club Posts compared to Axis Consulting's Posts"
+            }
           ></ContentBox>
 
           <ContentBox
@@ -221,6 +237,7 @@ function Axis() {
             LabelName={"Solution Ideation"}
             LabelColor={"--orange"}
             Image={AxisContent_3}
+            AltText={"My product vision for Axis Consulting"}
           ></ContentBox>
 
           <ContentBox
@@ -231,6 +248,7 @@ function Axis() {
             LabelName={"Art Direction"}
             LabelColor={"--orange"}
             Image={AxisContent_4}
+            AltText={"Competing at Forward Vision Case Competition"}
           ></ContentBox>
 
           <ContentBox
@@ -241,6 +259,7 @@ function Axis() {
             LabelName={"Solution Ideation"}
             LabelColor={"--orange"}
             Image={AxisContent_5}
+            AltText={"Moodboard that inspired the art direction"}
           ></ContentBox>
 
           <ContentBox
@@ -251,6 +270,7 @@ function Axis() {
             LabelName={"Solution Ideation"}
             LabelColor={"--purple"}
             Image={AxisContent_6}
+            AltText={"The inspiration that birthed the art direction"}
           ></ContentBox>
 
           <ContentBox
@@ -262,6 +282,7 @@ function Axis() {
             LabelName={"Implementation Strategy"}
             LabelColor={"--purple"}
             Image={AxisContent_7}
+            AltText={"Strategies for implementing the new art direction"}
           ></ContentBox>
 
           <ContentBox
@@ -273,6 +294,7 @@ function Axis() {
             LabelName={"Design Decisions"}
             LabelColor={"--purple"}
             Image={AxisContent_8}
+            AltText={"The 3 pillars that drove the new art direction"}
           ></ContentBox>
 
           <ContentBox
@@ -283,6 +305,7 @@ function Axis() {
             LabelName={"Design Decisions"}
             LabelColor={"--purple"}
             Image={AxisContent_9}
+            AltText={"Axis's new type and color pallete"}
           ></ContentBox>
 
           <ContentBox
@@ -294,6 +317,9 @@ function Axis() {
             LabelName={"Solution Showcase"}
             LabelColor={"--purple"}
             Image={AxisContent_10}
+            AltText={
+              "A collection of Instagram posts I designed for Axis Consulting"
+            }
           ></ContentBox>
 
           <ContentBox
@@ -304,6 +330,9 @@ function Axis() {
             LabelName={"Going Beyond the Scope"}
             LabelColor={"--turquoise"}
             Image={AxisContent_11}
+            AltText={
+              "The motion graphic timeline I created for Axis Consulting"
+            }
           ></ContentBox>
 
           <ContentBox
@@ -315,6 +344,9 @@ function Axis() {
             LabelName={"Key Take Away(s)"}
             LabelColor={"--yellow"}
             Image={AxisContent_12}
+            AltText={
+              "The impact of the rebrand on Axis Consulting, measured across Linkedin and Instagram"
+            }
           ></ContentBox>
 
           <div className="w-[100%] flex flex-row justify-center">

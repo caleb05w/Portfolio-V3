@@ -10,6 +10,9 @@ function ContentBox({
   Image,
   Speed,
   ID,
+  AltText,
+  Width,
+  Height,
 }) {
   return (
     <section>
@@ -26,7 +29,14 @@ function ContentBox({
         ></Textbox>
 
         <div className="object-cover">
-          <img className=" w-full h-fit" src={Image} loading={Speed}></img>
+          <img
+            className=" w-full h-fit"
+            src={Image}
+            alt={AltText}
+            width={Width}
+            height={Height}
+            loading={Speed}
+          ></img>
         </div>
       </div>
     </section>
