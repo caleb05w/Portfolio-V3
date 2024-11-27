@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../output.css";
 import "../input.css"; // Tailwind stylesheet
 import ContentBox from "../Components/ContentBox";
@@ -28,13 +28,41 @@ import AxisContent_11 from "../assets/images/AxisContent_11.png";
 import AxisContent_12 from "../assets/images/AxisContent_12.png";
 
 function Axis() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <div className="flex flex-row justify-between pb-[3vh] lg:pb-[4vh]">
-      <nav className="fixed lg:bg-white w-[100vw] lg:w-[20%] flex flex-row justify-start md:justify-center lg:justify-center bottom-0 lg:top-0 border-2 border-black overscroll-x-auto overflow-x-auto lg:p-0 p-[5%] bg-my-purple-dark">
-        <div className="lg:h-[100vh] h-[10vh] lg:mt-[15vh] flex flex-col gap-[1.5%]">
-          <h3 className="text-my-black">Hello! I'm a sidebar. </h3>
-          <div className="flex flex-col min-h-[20vh]">
-            <div className="flex flex-row lg:flex-col gap-[2rem] h-full">
+      {/* <div className="bg-my-purple-dark rounded-full px-[1rm] py-[0.5rem] h-fit fixed bottom-0 mb-[5vh] right-0">
+        <button onClick={toggleNavbar}>
+          <h5 className="text-white ">Open Timeline +</h5>
+        </button>
+      </div> */}
+      <nav
+        className={`fixed lg:bg-white w-[100vw] lg:w-[20%] flex flex-row justify-start md:justify-center lg:justify-center ${
+          isOpen ? "top-[69vh]" : "top-[94vh]"
+        } lg:top-0 lg:overflow-hidden lg:overscroll-none overscroll-x-auto overflow-x-auto lg:p-0 p-[5%] py-[0.25rem] bg-my-purple-dark rounded-[0.5rem] ease-in-out duration-300`}
+      >
+        <div className="lg:h-[100vh] h-fit lg:mt-[15vh] flex flex-col gap-[1.5%]">
+          {/* Navbar Header */}
+
+          <h3 className="text-my-black lg:relative fixed z-10">
+            <div className="lg:flex flex-row justify-between lg:w-fit  w-[90vw]">
+              <h3 className="hidden lg:block">Hello! I'm a sidebar.</h3>
+              <button
+                className="lg:hidden relative text-white text-lg"
+                onClick={toggleNavbar}
+              >
+                {isOpen ? "Hi! I'm a Navbar (close)" : "Lost? Click me."}
+              </button>
+            </div>
+          </h3>
+
+          {/* Links */}
+          <div className="flex flex-col min-h-[20vh] lg:mt-[0] mt-[6vh] z-10">
+            <div className="flex flex-col lg:gap-[1%] gap-[0rem] h-full">
               <Hyperlink
                 Text={"Problem"}
                 Link={"#problem"}
@@ -79,6 +107,7 @@ function Axis() {
               />
             </div>
           </div>
+
           <Hyperlink
             Text={"Back to Top"}
             Link={"#Top"}
@@ -91,7 +120,7 @@ function Axis() {
       <div className=" fixed w-0 md:w-[17%] lg:w-[17%] flex flex-row justify-start lg:justify-center top-[90vh]">
         <div className="h-[100vh] w-[80%] flex flex-col gap-[1.5%]">
           <div className="flex flex-col min-h-[20vh]">
-            <div className="lg:flex md:flex hidden flex-col gap-[1%] h-full">
+            <div className="lg:flex  hidden flex-col gap-[1%] h-full">
               <Hyperlink
                 Text={"Instagram"}
                 Link={"#problem"}
