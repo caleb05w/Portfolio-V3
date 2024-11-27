@@ -2,7 +2,7 @@ import React from "react";
 
 function ImageContainer({ Image, Speed, altText, Width, Height }) {
   return (
-    <div className="object-cover rounded-[0.5rem] w-100 h-100 overflow-hidden">
+    <div className="object-cover rounded-[0.5rem] w-full border-2 border-black lg:h-[fit] max-h-[100vh] overflow-hidden">
       <img
         className=" w-100 h-fit"
         src={Image}
