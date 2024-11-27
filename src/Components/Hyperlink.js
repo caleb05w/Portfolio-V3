@@ -6,7 +6,7 @@ function Hyperlink({ Text, Link, Color, HoverColor, Display }) {
     <div className="group w-fit">
       <a href={Link}>
         <h5
-          className="ease-in-out duration-300 flex flex-row group-hover:text-[var(--hover-color)]"
+          className="ease-in-out duration-300 flex flex-row group-hover:text-[var(--hover-color)] whitespace-nowrap"
           style={{
             color: `var(${Color})`,
             "--hover-color": `var(${HoverColor})`,

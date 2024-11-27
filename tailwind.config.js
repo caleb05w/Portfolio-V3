@@ -6,8 +6,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "my-purple": "#5d4ae1", // Custom purple color
-        "my-gray": "#aaa8a8", // Custom gray color
+        "my-purple-light": "#BFB6FF", // Light purple
+        "my-purple-dark": "#5d4ae1", // Dark purple
+        "my-gray": "#aaa8a8", // Custom gray colory
         "my-black": "#000000", // Custom black color
       },
     },

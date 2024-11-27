@@ -14,7 +14,7 @@ function ContentBox({
   return (
     <section>
       <div
-        className="lg:w-[65vw] w-[80vw] flex flex-col gap-[1.5rem] lg:gap-[2.5rem]"
+        className="lg:w-[100%] w-[100%] flex flex-col gap-[1.5rem] lg:gap-[2.5rem]"
         id={ID}
       >
         <Textbox

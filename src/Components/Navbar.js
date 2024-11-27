@@ -1,4 +1,5 @@
 import React from "react";
+import Hyperlink from "./Hyperlink";
 
 function Navbar() {
   return (
@@ -12,11 +13,27 @@ function Navbar() {
           <h5 className="text-my-purple">Caleb Wu</h5>
         </a>
         <div className="flex flex-row w-[20%] justify-between z-10">
-          <h5 className="">About</h5>
-          <h5 className="">Resume</h5>
-          <a href="/gallery">
-            <h5 className="">Gallery</h5>
-          </a>
+          <Hyperlink
+            Text={"Resume"}
+            Link={"/gallery"}
+            Color={"my-gray"}
+            HoverColor={"--purple"}
+            Display={"none"}
+          />
+          <Hyperlink
+            Text={"Gallery"}
+            Link={"/gallery"}
+            Color={"my-gray"}
+            HoverColor={"--purple"}
+            Display={"none"}
+          />
+          <Hyperlink
+            Text={"About"}
+            Link={"/gallery"}
+            Color={"my-gray"}
+            HoverColor={"--purple"}
+            Display={"none"}
+          />
         </div>
       </div>
       <div className="pb-[3%]"></div>

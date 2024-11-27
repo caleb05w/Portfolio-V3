@@ -29,12 +29,12 @@ import AxisContent_12 from "../assets/images/AxisContent_12.png";
 
 function Axis() {
   return (
-    <div>
-      <nav className=" fixed  w-[17%] flex flex-row justify-center top-0">
-        <div className="h-[100vh] mt-[15vh] flex flex-col gap-[1.5%]">
-          <h5 className="text-my-black">Hello! I'm a sidebar. </h5>
+    <div className="flex flex-row justify-between pb-[3vh] lg:pb-[4vh]">
+      <nav className="fixed lg:bg-white w-[100vw] lg:w-[20%] flex flex-row justify-start md:justify-center lg:justify-center bottom-0 lg:top-0 border-2 border-black overscroll-x-auto overflow-x-auto lg:p-0 p-[5%] bg-my-purple-dark">
+        <div className="lg:h-[100vh] h-[10vh] lg:mt-[15vh] flex flex-col gap-[1.5%]">
+          <h3 className="text-my-black">Hello! I'm a sidebar. </h3>
           <div className="flex flex-col min-h-[20vh]">
-            <div className="flex flex-col gap-[1%] h-full">
+            <div className="flex flex-row lg:flex-col gap-[2rem] h-full">
               <Hyperlink
                 Text={"Problem"}
                 Link={"#problem"}
@@ -88,10 +88,10 @@ function Axis() {
         </div>
       </nav>
 
-      <div className=" fixed   w-[17%] flex flex-row justify-center top-[90vh]">
-        <div className="h-[100vh]  w-[70%] flex flex-col gap-[1.5%]">
+      <div className=" fixed w-0 md:w-[17%] lg:w-[17%] flex flex-row justify-start lg:justify-center top-[90vh]">
+        <div className="h-[100vh] w-[80%] flex flex-col gap-[1.5%]">
           <div className="flex flex-col min-h-[20vh]">
-            <div className="flex flex-col gap-[1%] h-full">
+            <div className="lg:flex md:flex hidden flex-col gap-[1%] h-full">
               <Hyperlink
                 Text={"Instagram"}
                 Link={"#problem"}
@@ -111,9 +111,9 @@ function Axis() {
         </div>
       </div>
 
-      <div className="w-[100vw] flex flex-row justify-center">
-        <div className="lg:w-[65vw] w-[80vw] flex flex-col gap-[4rem] lg:gap-[9.375rem]">
-          <div className=" flex flex-col gap-[2.125rem]" id="top">
+      <div className="w-[100vw] flex flex-row justify-end px-[1.5%]">
+        <div className="lg:w-[70vw] w-[95vw] flex flex-col gap-[4rem] md-[7rem] lg:gap-[9.375rem]">
+          <div className=" flex flex-col gap-[1rem] lg:gap-[2.125rem]" id="top">
             <h5>Director of Design | 2024</h5>
             <h1>
               Re-Defining a Narrative: Curating a new Brand to Invoke Awe.
@@ -125,7 +125,7 @@ function Axis() {
               <Label name={"End-to-End"} color={"--emerald"} />
             </div> */}
             <ContainerImage Image={AxisCover}></ContainerImage>
-            <div className="flex flex-row justify-between">
+            <div className="flex flex-col lg:flex-row justify-between">
               <div className="flex flex-col">
                 <h4>Client</h4>
                 <p>SFU Axis Consulting</p>
@@ -288,6 +288,17 @@ function Axis() {
             Image={AxisContent_12}
           ></ContentBox>
 
+          <div className="w-[100%] flex flex-row justify-center">
+            <div className="flex flex-col gap-[1rem]">
+              {/* <h2>What's next?</h2> */}
+              <Hyperlink
+                Text={"Innota Technologies"}
+                Link={"/Innota"}
+                Color={"my-gray"}
+                HoverColor={"--purple"}
+              ></Hyperlink>
+            </div>
+          </div>
           {/* <MultiContentBox
           ID={"reflection"}
             Title={"⭐ What I learned"}

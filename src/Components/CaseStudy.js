@@ -9,18 +9,18 @@ function CaseStudy({ Title, Body, Image, Link, Year, Skills }) {
           <div className="group">
             <div className=" ">
               <div className="relative">
-                <div className="flex flex-row justify-between absolute w-full px-[4%] py-[3%]">
-                  <h5 className="text-white z-10">{Title}</h5>
-                  <h5 className="text-white z-10">{Year}</h5>
+                <div className="flex flex-row justify-between absolute w-full px-[2.5%] py-[2%]">
+                  <h3 className="text-white z-10">{Title}</h3>
+                  <h3 className="text-white z-10">{Year}</h3>
                 </div>
 
-                <div className="flex flex-row gap-[3%] absolute bottom-0 group-hover:bottom-4 ease-in-out duration-300 w-full px-[4%] ">
+                <div className="flex flex-row gap-[3%] absolute bottom-0 group-hover:bottom-[3%] ease-in-out duration-300 w-full px-[2.5%] ">
                   <h5 className="text-my-gray z-10 opacity-0 group-hover:opacity-100 ease-in-out duration-300">
                     {Body}
                   </h5>
                 </div>
 
-                <div className="flex flex-row gap-[3%] absolute bottom-4 group-hover:bottom-8 ease-in-out duration-300 w-full px-[4%] ">
+                <div className="flex flex-row gap-[3%] absolute bottom-[3%] group-hover:bottom-[8%] ease-in-out duration-300 w-full px-[2.5%] ">
                   <h5 className="text-my-gray z-10 opacity-100 group-hover:opacity-0 ease-in-out duration-300">
                     {Skills}
                   </h5>

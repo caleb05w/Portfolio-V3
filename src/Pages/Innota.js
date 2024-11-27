@@ -30,7 +30,7 @@ function Innota() {
 
   return (
     <div>
-      <div className="w-[100vw] flex flex-row justify-center">
+      <div className="w-[100vw] flex flex-row justify-center  pb-[3vh] lg:pb-[4vh]">
         <div className="lg:w-[65vw] w-[80vw] flex flex-col gap-[4rem] lg:gap-[9.375rem]">
           <div className=" flex flex-col gap-[2.125rem]">
             <h5>Product Design Intern | Summer 2023</h5>

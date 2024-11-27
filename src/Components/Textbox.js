@@ -4,7 +4,7 @@ import Label from "../Components/Label";
 function Textbox({ Title, Body, Body2, LabelName, LabelColor }) {
   return (
     <div>
-      <div className="flex flex-col gap-[0.625rem]">
+      <div className="flex flex-col gap-[0.625rem] w-[100%] ">
         <Label name={LabelName} color={LabelColor} />
         <h2>{Title}</h2>
         <div className="flex flex-col gap-[1.2rem]">
