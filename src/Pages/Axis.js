@@ -53,10 +53,16 @@ function Axis() {
 
           <h3 className="text-my-black lg:relative fixed z-10">
             <div className="lg:flex flex flex-row justify-between lg:w-fit  w-[90vw]">
-              <h3 className=" hidden lg:block">Hello! I'm a sidebar.</h3>
-              <button onClick={toggleNavbar}>
-                <h3 className=" lg:hidden">
-                  {" "}
+              <h3 className="hidden lg:block">Hello! I'm a sidebar.</h3>
+              <button
+                onClick={toggleNavbar}
+                aria-label={
+                  isOpen
+                    ? "Close sidebar and hide project journey"
+                    : "Open sidebar and show project journey"
+                }
+              >
+                <h3 className="lg:hidden">
                   {isOpen
                     ? "Hello! I'm a sidebar."
                     : "Press Me! Project Journey"}
@@ -65,6 +71,7 @@ function Axis() {
               <button
                 className="lg:hidden relative text-white text-lg"
                 onClick={toggleNavbar}
+                aria-label={isOpen ? "Close sidebar" : "Open sidebar"}
               >
                 {isOpen ? "X" : ""}
               </button>
