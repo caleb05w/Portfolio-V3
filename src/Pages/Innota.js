@@ -170,8 +170,8 @@ function Innota() {
               Width={"1085px"}
               Height={"533px"}
             ></ContainerImage>
-            <div className="flex flex-row justify-between">
-              <div className="flex flex-col">
+            <div className="flex flex-col lg:flex-row justify-between">
+            <div className="flex flex-col">
                 <h4>Client</h4>
                 <p>Innota Technologies</p>
               </div>

@@ -16,11 +16,11 @@ import { CiMail } from "react-icons/ci";
 
 function Home() {
   return (
-    <div id="top" className="bg-gray-100">
+    <div id="top" className=" w-[100vw] lg:pt-0 pt-[2rem]">
       <div className="w-[100vw] flex flex-row justify-center pb-[3vh] lg:pb-[4vh]">
         <div className="lg:w-[95vw] w-[100vw] lg:px-[0%] px-[7%] flex flex-col lg:flex-row gap-[2rem] lg:gap-[4rem] ">
           <div className="  h-fit lg:h-[80vh] w-[50vw]">
-            <div className=" flex flex-col h-fit lg:h-[85vh] justify-between relative lg:fixed w-[100vw] lg:w-[21vw]">
+            <div className=" flex flex-col h-fit lg:h-[85vh] justify-between relative lg:fixed w-[90vw] lg:w-[21vw]">
               <div className="flex flex-col gap-[2rem]   ">
                 <h1>
                   Hi, I’m Caleb I’m a product designer based in Vancouver, BC.{" "}
