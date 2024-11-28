@@ -156,6 +156,8 @@ function Axis() {
             <ContainerImage
               Image={AxisCover}
               alt={"Cover Gif for Axis Consulting Case Study"}
+              Width={"1080px"}
+              Height={"675px"}
             ></ContainerImage>
             <div className="flex flex-col lg:flex-row justify-between">
               <div className="flex flex-col">
@@ -191,15 +193,21 @@ function Axis() {
               <ContainerImage
                 Image={Axis1}
                 alt={"Animated Gif Showcase of Axis Consulting Events"}
+                Height={"540px"}
+                Width={"540px"}
               ></ContainerImage>
               <ContainerImage
                 Image={Axis2}
                 alt={"Animated Gif Showcase of Axis Consulting Events"}
+                Height={"540px"}
+                Width={"540px"}
               ></ContainerImage>
             </div>
             <ContainerImage
               Image={Axis3}
               alt={"Animated Gif Showcase of Axis Consulting Events"}
+              Height={"1085px"}
+              Width={"1085px"}
             ></ContainerImage>
           </div>
 
