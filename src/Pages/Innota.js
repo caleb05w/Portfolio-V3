@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "../output.css";
 import "../input.css"; // Tailwind stylesheet
 import ContentBox from "../Components/ContentBox";
 import ContainerImage from "../Components/ContainerImage";
 import Textbox from "../Components/Textbox";
 import MultiContentBox from "../Components/MultiContentBox";
-import Label from "../Components/Label";
+import { FaArrowRight } from "react-icons/fa";
+import Hyperlink from "../Components/Hyperlink";
 
 /* Images */
 import InnotaCover from "../assets/images/InnotaCover.png";
@@ -25,28 +26,134 @@ import InnotaContent_10 from "../assets/images/InnotaContent_10.png";
 import InnotaContent_11 from "../assets/images/InnotaContent_11.png";
 
 function Innota() {
-  // const InnotaCover =
-  //   "https://dash.cloudflare.com/13c71e6e0afbadf78c6fa2572b98316f/r2/default/buckets/portfolio/objects/InnotaCover.png";
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
-    <div>
-      <div className="w-[100vw] flex flex-row justify-center  pb-[3vh] lg:pb-[4vh]">
-        <div className="lg:w-[65vw] w-[80vw] flex flex-col gap-[4rem] lg:gap-[9.375rem]">
-          <div className=" flex flex-col gap-[2.125rem]">
-            <h5>Product Design Intern | Summer 2023</h5>
-            <h1>A User-Centric Redesign to Drive Engagement and Clarity</h1>
-            <div className=" flex flex-row gap-[1rem]">
-              <div className="border-2 border-my-gray rounded-[999rem] px-[0.5rem] py-[0.25rem] h-fit">
-                <h5 className="">UX/UI</h5>
-              </div>
+    <div className="flex flex-row justify-between pb-[3vh] lg:pb-[4vh]">
+      {/* <div className="bg-my-purple-dark rounded-full px-[1rm] py-[0.5rem] h-fit fixed bottom-0 mb-[5vh] right-0">
+        <button onClick={toggleNavbar}>
+          <h5 className="text-white ">Open Timeline +</h5>
+        </button>
+      </div> */}
+      <nav
+        className={`fixed lg:bg-white w-[100vw] lg:w-[20%] flex flex-row justify-start md:justify-center lg:justify-center lg:pb-0 pb-[3vh] ${
+          isOpen ? "top-[69vh]" : "top-[94vh]"
+        } lg:top-0 lg:overflow-hidden lg:overscroll-none overscroll-x-auto overflow-x-auto lg:p-0 p-[5%] py-[0.25rem] bg-my-purple-dark rounded-[0.5rem] ease-in-out duration-300`}
+      >
+        <div className="lg:h-[100vh] h-fit lg:mt-[15vh] flex flex-col gap-[1.5%]">
+          {/* Navbar Header */}
+
+          <h3 className="text-my-black lg:relative fixed z-10">
+            <div className="lg:flex flex-row justify-between lg:w-fit  w-[90vw]">
+              <h3 className="hidden lg:block">Hello! I'm a sidebar.</h3>
+              <button
+                className="lg:hidden relative text-white text-lg"
+                onClick={toggleNavbar}
+              >
+                {isOpen ? "Close X" : "Lost? Click me."}
+              </button>
+            </div>
+          </h3>
+
+          {/* Links */}
+          <div className="flex flex-col min-h-[20vh] lg:mt-[0] mt-[6vh] z-10">
+            <div className="flex flex-col lg:gap-[1%] gap-[0rem] h-full">
+              <Hyperlink
+                Text={"Problem"}
+                Link={"#InnotaProblem"}
+                Color={"my-gray"}
+                HoverColor={"--purple"}
+                Display={"none"}
+              />
+              <Hyperlink
+                Text={"Solution Ideation"}
+                Link={"#InnotaSolution"}
+                Color={"my-gray"}
+                HoverColor={"--purple"}
+                Display={"none"}
+              />
+              <Hyperlink
+                Text={"Bringing Solutions to Life"}
+                Link={"#InnotaSolutionToLife"}
+                Color={"my-gray"}
+                HoverColor={"--purple"}
+                Display={"none"}
+              />
+
+              <Hyperlink
+                Text={"Solution Showcase"}
+                Link={"#InnotaSolutionShowcase"}
+                Color={"my-gray"}
+                HoverColor={"--purple"}
+                Display={"none"}
+              />
+              <Hyperlink
+                Text={"Impact"}
+                Link={"#InnotaImpact"}
+                Color={"my-gray"}
+                HoverColor={"--purple"}
+                Display={"none"}
+              />
+            </div>
+          </div>
+
+          <Hyperlink
+            Text={"Back to Top"}
+            Link={"#Top"}
+            Color={"my-gray"}
+            HoverColor={"--purple"}
+          />
+        </div>
+      </nav>
+
+      <div className=" fixed w-0 md:w-[17%] lg:w-[17%] flex flex-row justify-start lg:justify-center top-[90vh]">
+        <div className="h-[100vh] w-[80%] flex flex-col gap-[1.5%]">
+          <div className="flex flex-col min-h-[20vh]">
+            <div className="lg:flex  hidden flex-col gap-[1%] h-full">
+              <Hyperlink
+                Text={"Instagram"}
+                Link={"#problem"}
+                Color={"my-gray"}
+                HoverColor={"--purple"}
+                Display={"none"}
+              />
+              <Hyperlink
+                Text={"Website"}
+                Link={"#solution-ideation"}
+                Color={"my-gray"}
+                HoverColor={"--purple"}
+                Display={"none"}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="w-[100vw] flex flex-row justify-end lg:px-[3%] md:px-[3%] px-[7%]">
+        <div className="lg:w-[70vw] w-[95vw] flex flex-col gap-[4rem] md-[7rem] lg:gap-[9.375rem]">
+          <div className=" flex flex-col gap-[1rem] lg:gap-[2.125rem]" id="top">
+            <h5>Director of Design | 2024</h5>
+            <h1>
+              Re-Defining a Narrative: Curating a new Brand to Invoke Awe.
+            </h1>
+            {/* <div className=" flex flex-row gap-[1rem]">
               <Label name={"UX/UI"} color={"--red"} />
               <Label name={"Front End"} color={"--blue"} />
               <Label name={"Product Design"} color={"--purple"} />
               <Label name={"End-to-End"} color={"--emerald"} />
-            </div>
+            </div> */}
             <ContainerImage
               Image={InnotaCover}
               Speed={"eager"}
+              altText={
+                "Showcase of Innota Technologies Website across different screens"
+              }
+              Width={"1085px"}
+              Height={"533px"}
             ></ContainerImage>
             <div className="flex flex-row justify-between">
               <div className="flex flex-col">
@@ -67,9 +174,27 @@ function Innota() {
               </div>
             </div>
           </div>
-          <ContainerImage Image={Innota1} Speed={"lazy"}></ContainerImage>
-          <ContainerImage Image={Innota2} Speed={"lazy"}></ContainerImage>
-          <ContainerImage Image={Innota3} Speed={"lazy"}></ContainerImage>
+          <ContainerImage
+            Image={Innota1}
+            Speed={"lazy"}
+            altText="Innota's Website as shown on a laptop moniter"
+            Width={"1085px"}
+            Height={"672px"}
+          ></ContainerImage>
+          <ContainerImage
+            Image={Innota2}
+            Speed={"lazy"}
+            altText="Innota's Website showcased on a variety of different phone screens"
+            Width={"1085px"}
+            Height={"390px"}
+          ></ContainerImage>
+          <ContainerImage
+            Image={Innota3}
+            Speed={"lazy"}
+            altText="Some more product showcases of Innota's branding and website on different mockups"
+            Width={"1085px"}
+            Height={"377px"}
+          ></ContainerImage>
 
           <div className="flex flex-col gap-[2.5rem]">
             <Textbox
@@ -99,6 +224,12 @@ function Innota() {
             LabelColor={"--red"}
             Image={mindmap}
             Speed={"lazy"}
+            Height={"445px"}
+            Width={"1085px"}
+            altText={
+              "Results from my mindmap survey, showcasing that 10% of people use mind maps."
+            }
+            ID={"InnotaProblem"}
           ></ContentBox>
 
           <ContentBox
@@ -113,6 +244,11 @@ function Innota() {
             LabelColor={"--red"}
             Image={InnotaContent2}
             Speed={"lazy"}
+            altText={
+              "The two channels of impact I had to choose from, Instagram and the website."
+            }
+            Width={"1085px"}
+            Height={"320px"}
           ></ContentBox>
 
           <ContentBox
@@ -124,6 +260,11 @@ function Innota() {
             LabelColor={"--orange"}
             Image={InnotaContent_3}
             Speed={"lazy"}
+            altText={
+              "Affinity mapping of the issues I found in the survey results."
+            }
+            Width={"1085px"}
+            Height={"607px"}
           ></ContentBox>
 
           <ContentBox
@@ -133,6 +274,11 @@ function Innota() {
             }
             Image={InnotaContent_4}
             Speed={"lazy"}
+            altText={
+              "The product vision I developed to drive my progress forward."
+            }
+            Width={"1085px"}
+            Height={"160px"}
           ></ContentBox>
 
           <ContentBox
@@ -144,6 +290,12 @@ function Innota() {
             LabelColor={"--orange"}
             Image={InnotaContent_5}
             Speed={"lazy"}
+            altText={
+              "The 3 different directions I proposed to drive the webpage and online identity."
+            }
+            Width={"1085px"}
+            Height={"320px"}
+            ID={"InnotaSolution"}
           ></ContentBox>
 
           <ContentBox
@@ -158,6 +310,11 @@ function Innota() {
             LabelColor={"--purple"}
             Image={InnotaContent_6}
             Speed={"lazy"}
+            altText={
+              "The tone of voice I developed to drive content copy, showcasing some quotes, and my youtube history"
+            }
+            Width={"1085px"}
+            Height={"545px"}
           ></ContentBox>
 
           <ContentBox
@@ -172,6 +329,11 @@ function Innota() {
             LabelColor={"--purple"}
             Image={InnotaContent_7}
             Speed={"lazy"}
+            altText={
+              "The reworked user journey, showcasing the old and new user journey."
+            }
+            Width={"1085px"}
+            Height={"303px"}
           ></ContentBox>
 
           <ContentBox
@@ -183,6 +345,12 @@ function Innota() {
             LabelColor={"--purple"}
             Image={InnotaContent_8}
             Speed={"lazy"}
+            altText={
+              "The design system I built on Figma to regulate my designs."
+            }
+            Width={"1085px"}
+            Height={"530px"}
+            ID={"InnotaSolutionToLife"}
           ></ContentBox>
 
           <ContentBox
@@ -194,6 +362,12 @@ function Innota() {
             LabelColor={"--purple"}
             Image={InnotaContent_9}
             Speed={"lazy"}
+            altText={
+              "A comparison between the new and old site, and some key features between the two."
+            }
+            Width={"1085px"}
+            Height={"1220px"}
+            ID="InnotaSolutionShowcase"
           ></ContentBox>
 
           <ContentBox
@@ -205,6 +379,11 @@ function Innota() {
             LabelColor={"--purple"}
             Image={InnotaContent_10}
             Speed={"lazy"}
+            altText={
+              "Mobile showcase of the responsive website across differnt mobile screens"
+            }
+            Width={"1085px"}
+            Height={"400px"}
           ></ContentBox>
 
           <ContentBox
@@ -219,6 +398,11 @@ function Innota() {
             LabelColor={"--turquoise"}
             Image={InnotaContent_11}
             Speed={"lazy"}
+            altText={
+              "The email templates I developed and designed for Innota Technologies"
+            }
+            Width={"1085px"}
+            Height={"671px"}
           ></ContentBox>
 
           <ContentBox
@@ -232,6 +416,7 @@ function Innota() {
             LabelName={"Key Take Away(s)"}
             LabelColor={"--yellow"}
             Speed={"lazy"}
+            ID={"InnotaImpact"}
           ></ContentBox>
 
           <MultiContentBox
@@ -251,6 +436,19 @@ function Innota() {
             LabelName={"Reflection"}
             LabelColor={"--red"}
           ></MultiContentBox>
+
+          <div className="w-[100%] flex flex-row justify-center lg:mb-[5%] mb-[20%]">
+            <div className="flex flex-col gap-[1rem]">
+              <a href="/Innota">
+                <button className="text-white bg-my-purple-dark px-[1rem] py-[0.5rem] rounded-full hover:cursor-pointer hover:bg-my-purple-light ease-in-out duration-300 focus:border-2 focus:border-black">
+                  Innota Technologies
+                  <span className="inline-block ml-[1rem]">
+                    <FaArrowRight />
+                  </span>
+                </button>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

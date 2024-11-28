@@ -5,7 +5,7 @@ function CaseStudy({ Title, Body, Image, Link, Year, Skills, AltText }) {
   return (
     <section className="flex flex-col gap-[1rem]">
       <div className="rounded-[0.5rem] overflow-hidden ">
-        <a href={Link} className="hover:cursor-pointer">
+        <a href={Link} className="hover:cursor-pointer focus:brightness-[40%] ">
           <div className="group">
             <div className=" ">
               <div className="relative">
@@ -29,7 +29,7 @@ function CaseStudy({ Title, Body, Image, Link, Year, Skills, AltText }) {
                   <img
                     src={Image}
                     alt={AltText}
-                    className="w-full h-[50vh] lg:min-h-[70vh] object-cover  ease-in-out duration-300 transform group-hover:scale-110 brightness-[80%] group-hover:brightness-[40%]"
+                    className="w-full h-[50vh] lg:min-h-[70vh] object-cover  ease-in-out duration-300 transform group-hover:scale-110 brightness-[80%] group-hover:brightness-[40%] "
                   ></img>
                 </div>
               </div>

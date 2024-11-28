@@ -13,8 +13,9 @@ function Navbar() {
   return (
     <nav className="mb-[15%] lg:mb-[3%] ">
       <div
-        className=" z-20 flex flex-row justify-between fixed h-[10%] w-full 
-       top-0 left-0 bg-white lg:bg-white/20  [mask-image:linear-gradient(180deg,_rgba(255,255,255,1)_20%,_rgba(255,255,255,0)_80%)]  backdrop-blur-[8px]"
+        className=" z-20 flex flex-row justify-between fixed h-[fit] lg:h-[10%] w-full 
+       top-0 left-0 bg-white backdrop-blur-[8px]"
+        //  lg:[mask-image:linear-gradient(180deg,_rgba(255,255,255,1)_20%,_rgba(255,255,255,0)_80%)]
       ></div>
 
       <div
@@ -53,21 +54,21 @@ function Navbar() {
           <Hyperlink
             Text={"Resume"}
             Link={"/gallery"}
-            Color={"my-gray"}
+            Color={"my-black"}
             HoverColor={"--purple"}
             Display={"none"}
           />
           <Hyperlink
             Text={"Gallery"}
             Link={"/gallery"}
-            Color={"my-gray"}
+            Color={"my-black"}
             HoverColor={"--purple"}
             Display={"none"}
           />
           <Hyperlink
             Text={"About"}
             Link={"/gallery"}
-            Color={"my-gray"}
+            Color={"my-black"}
             HoverColor={"--purple"}
             Display={"none"}
           />

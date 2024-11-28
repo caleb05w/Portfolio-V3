@@ -26,6 +26,9 @@ import AxisContent_9 from "../assets/images/AxisContent_9.png";
 import AxisContent_10 from "../assets/images/AxisContent_10.png";
 import AxisContent_11 from "../assets/images/AxisContent_11.png";
 import AxisContent_12 from "../assets/images/AxisContent_12.png";
+import AxisReflection1 from "../assets/images/AxisReflection1.png";
+import AxisReflection2 from "../assets/images/AxisReflection2.png";
+import AxisReflection3 from "../assets/images/AxisReflection3.png";
 
 function Axis() {
   const [isOpen, setIsOpen] = useState(false);
@@ -221,6 +224,8 @@ function Axis() {
             LabelColor={"--red"}
             Image={AxisContent_1}
             Alt={"Axis Consulting's Current Branding"}
+            Width={"1085px"}
+            Height={"670px"}
           ></ContentBox>
 
           <ContentBox
@@ -234,6 +239,8 @@ function Axis() {
             Alt={
               "Compilation of SFU Business Club Posts compared to Axis Consulting's Posts"
             }
+            Width={"1085px"}
+            Height={"473px"}
           ></ContentBox>
 
           <ContentBox
@@ -246,6 +253,8 @@ function Axis() {
             LabelColor={"--orange"}
             Image={AxisContent_3}
             AltText={"My product vision for Axis Consulting"}
+            Width={"1085px"}
+            Height={"572px"}
           ></ContentBox>
 
           <ContentBox
@@ -257,6 +266,8 @@ function Axis() {
             LabelColor={"--orange"}
             Image={AxisContent_4}
             AltText={"Competing at Forward Vision Case Competition"}
+            Width={"1085px"}
+            Height={"158px"}
           ></ContentBox>
 
           <ContentBox
@@ -268,6 +279,8 @@ function Axis() {
             LabelColor={"--orange"}
             Image={AxisContent_5}
             AltText={"Moodboard that inspired the art direction"}
+            Width={"1085px"}
+            Height={"380px"}
           ></ContentBox>
 
           <ContentBox
@@ -279,6 +292,8 @@ function Axis() {
             LabelColor={"--purple"}
             Image={AxisContent_6}
             AltText={"The inspiration that birthed the art direction"}
+            Width={"1085px"}
+            Height={"530px"}
           ></ContentBox>
 
           <ContentBox
@@ -291,6 +306,8 @@ function Axis() {
             LabelColor={"--purple"}
             Image={AxisContent_7}
             AltText={"Strategies for implementing the new art direction"}
+            Width={"1085px"}
+            Heigh={"347px"}
           ></ContentBox>
 
           <ContentBox
@@ -303,6 +320,8 @@ function Axis() {
             LabelColor={"--purple"}
             Image={AxisContent_8}
             AltText={"The 3 pillars that drove the new art direction"}
+            Width={"1085px"}
+            Height={"347px"}
           ></ContentBox>
 
           <ContentBox
@@ -314,6 +333,8 @@ function Axis() {
             LabelColor={"--purple"}
             Image={AxisContent_9}
             AltText={"Axis's new type and color pallete"}
+            Width={"1085px"}
+            Height={"530px"}
           ></ContentBox>
 
           <ContentBox
@@ -328,6 +349,8 @@ function Axis() {
             AltText={
               "A collection of Instagram posts I designed for Axis Consulting"
             }
+            Width={"1085px"}
+            Height={"1085px"}
           ></ContentBox>
 
           <ContentBox
@@ -341,6 +364,8 @@ function Axis() {
             AltText={
               "The motion graphic timeline I created for Axis Consulting"
             }
+            Width={"1085px"}
+            Height={"540px"}
           ></ContentBox>
 
           <ContentBox
@@ -355,20 +380,12 @@ function Axis() {
             AltText={
               "The impact of the rebrand on Axis Consulting, measured across Linkedin and Instagram"
             }
+            Width={"1085px"}
+            Height={"1130px"}
           ></ContentBox>
 
-          <div className="w-[100%] flex flex-row justify-center mb-[20%]">
-            <div className="flex flex-col gap-[1rem]">
-              <button className="text-white bg-my-purple-dark px-[1rem] py-[0.5rem] rounded-full  ">
-                <a href="/Innota">Innota Technologies</a>
-                <span className="inline-block ml-[1rem]">
-                  <FaArrowRight />
-                </span>
-              </button>
-            </div>
-          </div>
-          {/* <MultiContentBox
-          ID={"reflection"}
+          <MultiContentBox
+            ID={"reflection"}
             Title={"⭐ What I learned"}
             Reflection1={"💡 Designing within Constraints"}
             Body1={
@@ -384,7 +401,39 @@ function Axis() {
             }
             LabelName={"Reflection"}
             LabelColor={"--red"}
-          ></MultiContentBox> */}
+          ></MultiContentBox>
+          <div className="flex flex-row justify-between gap-[1rem]">
+            <ContainerImage
+              Image={AxisReflection1}
+              alt={"Reflection 1"}
+              Width={"408.18px"}
+              Height={"540px"}
+            ></ContainerImage>
+            <ContainerImage
+              Image={AxisReflection2}
+              alt={"Reflection 2"}
+              Width={"535.2px"}
+              Height={"540px"}
+            ></ContainerImage>
+            <ContainerImage
+              Image={AxisReflection3}
+              alt={"Reflection 3"}
+              Width={"733.39px"}
+              Height={"540px"}
+            ></ContainerImage>
+          </div>
+          <div className="w-[100%] flex flex-row justify-center lg:mb-[5%] mb-[20%]">
+            <div className="flex flex-col gap-[1rem]">
+              <a href="/Innota">
+                <button className="text-white bg-my-purple-dark px-[1rem] py-[0.5rem] rounded-full hover:cursor-pointer hover:bg-my-purple-light ease-in-out duration-300 focus:border-2 focus:border-black">
+                  Innota Technologies
+                  <span className="inline-block ml-[1rem]">
+                    <FaArrowRight />
+                  </span>
+                </button>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
