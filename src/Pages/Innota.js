@@ -439,9 +439,9 @@ function Innota() {
 
           <div className="w-[100%] flex flex-row justify-center lg:mb-[5%] mb-[20%]">
             <div className="flex flex-col gap-[1rem]">
-              <a href="/Innota">
+              <a href="/Axis">
                 <button className="text-white bg-my-purple-dark px-[1rem] py-[0.5rem] rounded-full hover:cursor-pointer hover:bg-my-purple-light ease-in-out duration-300 focus:border-2 focus:border-black">
-                  Innota Technologies
+                  Axis Consulting
                   <span className="inline-block ml-[1rem]">
                     <FaArrowRight />
                   </span>

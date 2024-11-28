@@ -46,19 +46,27 @@ function Axis() {
       <nav
         className={`fixed lg:bg-white w-[100vw] lg:w-[20%] flex flex-row justify-start md:justify-center lg:justify-center lg:pb-0 pb-[3vh] ${
           isOpen ? "top-[69vh]" : "top-[94vh]"
-        } lg:top-0 lg:overflow-hidden lg:overscroll-none overscroll-x-auto overflow-x-auto lg:p-0 p-[5%] py-[0.25rem] bg-my-purple-dark rounded-[0.5rem] ease-in-out duration-300`}
+        } lg:top-0 lg:overflow-hidden lg:overscroll-none overscroll-x-auto overflow-x-auto lg:p-0 p-[5%] py-[0.5rem] bg-my-purple-dark rounded-[0.5rem] ease-in-out duration-300`}
       >
         <div className="lg:h-[100vh] h-fit lg:mt-[15vh] flex flex-col gap-[1.5%]">
           {/* Navbar Header */}
 
           <h3 className="text-my-black lg:relative fixed z-10">
-            <div className="lg:flex flex-row justify-between lg:w-fit  w-[90vw]">
-              <h3 className="hidden lg:block">Hello! I'm a sidebar.</h3>
+            <div className="lg:flex flex flex-row justify-between lg:w-fit  w-[90vw]">
+              <h3 className=" hidden lg:block">Hello! I'm a sidebar.</h3>
+              <button onClick={toggleNavbar}>
+                <h3 className=" lg:hidden">
+                  {" "}
+                  {isOpen
+                    ? "Hello! I'm a sidebar."
+                    : "Press Me! Project Journey"}
+                </h3>
+              </button>
               <button
                 className="lg:hidden relative text-white text-lg"
                 onClick={toggleNavbar}
               >
-                {isOpen ? "Hi! I'm a Navbar (close)" : "Lost? Click me."}
+                {isOpen ? "X" : ""}
               </button>
             </div>
           </h3>
@@ -307,7 +315,7 @@ function Axis() {
             Image={AxisContent_7}
             AltText={"Strategies for implementing the new art direction"}
             Width={"1085px"}
-            Heigh={"347px"}
+            Height={"347px"}
           ></ContentBox>
 
           <ContentBox

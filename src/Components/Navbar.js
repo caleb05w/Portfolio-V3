@@ -24,14 +24,16 @@ function Navbar() {
         }
         `}
       >
-        <div className="flex flex-row w-[90vw] justify-between lg:relative fixed">
-          <Hyperlink
-            Text={"Caleb Wu"}
-            Link={"/"}
-            Color={"--purple"}
-            HoverColor={"--purple"}
-            Display={"flex"}
-          />
+        <div className="flex flex-row w-[85vw] h-fit justify-between lg:relative fixed">
+          <div className=" flex flex-col justify-center">
+            <Hyperlink
+              Text={"Caleb Wu"}
+              Link={"/"}
+              Color={"--purple"}
+              HoverColor={"--purple"}
+              Display={"flex"}
+            />
+          </div>
 
           <button
             onClick={toggleNavbar}
@@ -40,15 +42,15 @@ function Navbar() {
             }
           >
             <span
-              className={`text-md lg:hidden font-bold ease-in-out duration-300 ${isOpen ? "text-white" : "text-black"}`}
+              className={`text-3xl lg:hidden font-bold ease-in-out duration-300 h-full mt-[-1vh] flex flex-col justify-center  ${isOpen ? "text-white" : "text-black"}`}
             >
-              {isOpen ? "x" : <IoMenu />}
+              {isOpen ? "x" : <IoMenu className="w-[8] h-[8]" />}
             </span>
           </button>
         </div>
         <div
           className={`flex flex-col lg:flex-row lg:gap-0 gap-[0.5rem] w-fit lg:w-[20%] lg:mt-0 justify-between z-10 ease-in-out duration-300 ${
-            isOpen ? "mt-[8%]" : "mt-[-20vh]"
+            isOpen ? "mt-[10%]" : "mt-[-20vh]"
           }`}
         >
           <Hyperlink
