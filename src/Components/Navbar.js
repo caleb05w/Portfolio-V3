@@ -69,7 +69,7 @@ function Navbar() {
           />
           <Hyperlink
             Text={"About"}
-            Link={"/gallery"}
+            Link={"/About"}
             Color={"my-black"}
             HoverColor={"--purple"}
             Display={"none"}
