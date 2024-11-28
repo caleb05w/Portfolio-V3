@@ -420,19 +420,19 @@ function Axis() {
           <div className="flex flex-row justify-between gap-[1rem]">
             <ContainerImage
               Image={AxisReflection1}
-              alt={"Reflection 1"}
+              alt={"A photo of me at my first every Axis business shoot"}
               Width={"408.18px"}
               Height={"540px"}
             ></ContainerImage>
             <ContainerImage
               Image={AxisReflection2}
-              alt={"Reflection 2"}
+              alt={"The Axis Marketing & Design Team 2024-2025"}
               Width={"535.2px"}
               Height={"540px"}
             ></ContainerImage>
             <ContainerImage
               Image={AxisReflection3}
-              alt={"Reflection 3"}
+              alt={"My first case competition"}
               Width={"733.39px"}
               Height={"540px"}
             ></ContainerImage>

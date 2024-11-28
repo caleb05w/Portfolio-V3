@@ -37,19 +37,19 @@ const About = () => {
         <div className="flex flex-col lg:flex-row w-[fit] justify-between gap-[1rem]">
           <ContainerImage
             Image={Caleb1}
-            alt={"Reflection 1"}
+            alt={"a photo of me trying to play the Ukelele"}
             Width={"408.18px"}
             Height={"540px"}
           ></ContainerImage>
           <ContainerImage
             Image={Caleb2}
-            alt={"Reflection 2"}
+            alt={"Me and my friends staring at the ocean"}
             Width={"535.2px"}
             Height={"540px"}
           ></ContainerImage>
           <ContainerImage
             Image={Caleb3}
-            alt={"Reflection 3"}
+            alt={"A photo of me attempting to give a presentation"}
             Width={"733.39px"}
             Height={"540px"}
           ></ContainerImage>

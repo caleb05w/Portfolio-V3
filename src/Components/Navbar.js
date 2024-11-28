@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import Hyperlink from "./Hyperlink";
+import DynamicHyperlink from "./DynamicHyperlink";
 
-/*Icons*/
+/* Icons */
 import { IoMenu } from "react-icons/io5";
 
 function Navbar() {
@@ -10,28 +12,35 @@ function Navbar() {
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
+
+  //referenced from stack overflow
+  const location = useLocation();
+
+  const isActive = (path) => {
+    return location.pathname === path ? "hidden" : "relative";
+  };
+
   return (
     <nav className="mb-[15%] lg:mb-[3%] w-full ">
       <div
-        className=" z-20 flex flex-row justify-between fixed h-[fit] lg:h-[10%] w-full
-       top-0 left-0 bg-white backdrop-blur-[8px]"
-        //  lg:[mask-image:linear-gradient(180deg,_rgba(255,255,255,1)_20%,_rgba(255,255,255,0)_80%)]
+        className="z-20 flex flex-row justify-between fixed h-[fit] lg:h-[10%] w-full
+        top-0 left-0 bg-white backdrop-blur-[8px]"
       ></div>
 
       <div
         className={`flex flex-col lg:flex-row justify-between w-full h-fit z-30 py-[5%] lg:py-[2%] lg:px-[3%] fixed lg:mt-[0%] mt-[-3%] pt-[10%] pb-[10%] rounded-[0.5rem] lg:rounded-none ease-in-out duration-[500ms] lg:bg-transparent ${
           isOpen ? "bg-black" : "bg-white"
-        }
-        `}
+        }`}
       >
         <div className="flex flex-row w-[100vw] h-fit justify-between lg:relative fixed lg:px-0 px-[7%]">
-          <div className=" flex flex-col justify-center">
-            <Hyperlink
-              Text={"Caleb Wu"}
+          <div className="flex flex-col justify-center">
+            <DynamicHyperlink
+              Text={isActive("/") == "hidden" ? "Caleb Wu" : "Go Back"}
               Link={"/"}
               Color={"--purple"}
               HoverColor={"--purple"}
               Display={"flex"}
+              AdditionalClass={isActive("/")}
             />
           </div>
 
@@ -42,7 +51,9 @@ function Navbar() {
             }
           >
             <span
-              className={`text-3xl lg:hidden font-bold ease-in-out duration-300 h-full mt-[-1vh] flex flex-col justify-center  ${isOpen ? "text-white" : "text-black"}`}
+              className={`text-3xl lg:hidden font-bold ease-in-out duration-300 h-full mt-[-1vh] flex flex-col justify-center  ${
+                isOpen ? "text-white" : "text-black"
+              }`}
             >
               {isOpen ? "x" : <IoMenu className="w-[8] h-[8]" />}
             </span>
