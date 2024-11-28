@@ -9,8 +9,8 @@ import Caleb3 from "../assets/images/Caleb3.png";
 
 const About = () => {
   return (
-    <div className="w-[100vw] flex flex-row justify-center lg:px-[3%] md:px-[3%] px-[7%]">
-      <div className="lg:w-[70vw] w-[95vw] flex flex-col gap-[4rem] md-[2rem] lg:gap-[2.375rem]">
+    <div className="w-[100vw] flex flex-row justify-center lg:px-[3%] md:px-[3%] px-[7%] pb-[3vh] lg:pb-[4vh]">
+      <div className="lg:w-[70vw] w-[95vw] flex flex-col gap-[1rem] md-[2rem] lg:gap-[2.375rem]">
         <div className=" flex flex-col gap-[1rem] lg:gap-[1.125rem]" id="top">
           <h5>Director of Design | 2024</h5>
           <h1>Designer by Day, Developer by Night</h1>

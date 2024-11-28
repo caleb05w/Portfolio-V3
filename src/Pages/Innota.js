@@ -47,7 +47,7 @@ function Innota() {
         <div className="lg:h-[100vh] h-fit lg:mt-[15vh] flex flex-col gap-[1.5%]">
           {/* Navbar Header */}
 
-          <h3 className="text-my-black lg:relative fixed z-10">
+          <nav className="text-my-black lg:relative fixed z-10">
             <div className="lg:flex flex flex-row justify-between lg:w-fit  w-[90vw]">
               <h3 className="hidden lg:block">Hello! I'm a sidebar.</h3>
               <button
@@ -58,7 +58,7 @@ function Innota() {
                     : "Open sidebar and show project journey"
                 }
               >
-                <h3 className="lg:hidden">
+                <h3 className="lg:hidden text-white">
                   {isOpen
                     ? "Hello! I'm a sidebar."
                     : "Press Me! Project Journey"}
@@ -72,7 +72,7 @@ function Innota() {
                 {isOpen ? "X" : ""}
               </button>
             </div>
-          </h3>
+          </nav>
 
           {/* Links */}
           <div className="flex flex-col min-h-[20vh] lg:mt-[0] mt-[6vh] z-10">
@@ -171,7 +171,7 @@ function Innota() {
               Height={"533px"}
             ></ContainerImage>
             <div className="flex flex-col lg:flex-row justify-between">
-            <div className="flex flex-col">
+              <div className="flex flex-col">
                 <h4>Client</h4>
                 <p>Innota Technologies</p>
               </div>

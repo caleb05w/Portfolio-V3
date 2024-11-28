@@ -44,16 +44,16 @@ function Axis() {
         </button>
       </div> */}
       <nav
-        className={`fixed lg:bg-white w-[100vw] lg:w-[20%] flex flex-row justify-start md:justify-center lg:justify-center lg:pb-0 pb-[3vh] ${
+        className={`fixed lg:bg-white bg-my-purple-dark w-[100vw] lg:w-[20%] flex flex-row justify-start md:justify-center lg:justify-center lg:pb-0 pb-[3vh] ${
           isOpen ? "top-[69vh]" : "top-[94vh]"
         } lg:top-0 lg:overflow-hidden lg:overscroll-none overscroll-x-auto overflow-x-auto lg:p-0 p-[5%] py-[0.5rem] bg-my-purple-dark rounded-[0.5rem] ease-in-out duration-300`}
       >
         <div className="lg:h-[100vh] h-fit lg:mt-[15vh] flex flex-col gap-[1.5%]">
           {/* Navbar Header */}
 
-          <h3 className="text-my-black lg:relative fixed z-10">
+          <nav className=" lg:relative fixed z-10">
             <div className="lg:flex flex flex-row justify-between lg:w-fit  w-[90vw]">
-              <h3 className="hidden lg:block">Hello! I'm a sidebar.</h3>
+              <h3 className="hidden  lg:block">Hello! I'm a sidebar.</h3>
               <button
                 onClick={toggleNavbar}
                 aria-label={
@@ -62,7 +62,7 @@ function Axis() {
                     : "Open sidebar and show project journey"
                 }
               >
-                <h3 className="lg:hidden">
+                <h3 className="lg:hidden text-white">
                   {isOpen
                     ? "Hello! I'm a sidebar."
                     : "Press Me! Project Journey"}
@@ -76,7 +76,7 @@ function Axis() {
                 {isOpen ? "X" : ""}
               </button>
             </div>
-          </h3>
+          </nav>
 
           {/* Links */}
           <div className="flex flex-col min-h-[20vh] lg:mt-[0] mt-[6vh] z-10">
@@ -159,7 +159,7 @@ function Axis() {
       </div>
 
       <div className="w-[100vw] flex flex-row justify-end lg:px-[3%] md:px-[3%] px-[7%]">
-        <div className="lg:w-[70vw] w-[95vw] flex flex-col gap-[4rem] md-[7rem] lg:gap-[9.375rem]">
+        <section className="lg:w-[70vw] w-[95vw] flex flex-col gap-[4rem] md-[7rem] lg:gap-[9.375rem]">
           <div className=" flex flex-col gap-[1rem] lg:gap-[2.125rem]" id="top">
             <h5>Director of Design | 2024</h5>
             <h1>
@@ -213,12 +213,14 @@ function Axis() {
                 alt={"Animated Gif Showcase of Axis Consulting Events"}
                 Height={"540px"}
                 Width={"540px"}
+                Loading={"lazy"}
               ></ContainerImage>
               <ContainerImage
                 Image={Axis2}
                 alt={"Animated Gif Showcase of Axis Consulting Events"}
                 Height={"540px"}
                 Width={"540px"}
+                Loading={"lazy"}
               ></ContainerImage>
             </div>
             <ContainerImage
@@ -226,6 +228,7 @@ function Axis() {
               alt={"Animated Gif Showcase of Axis Consulting Events"}
               Height={"1085px"}
               Width={"1085px"}
+              Loading={"lazy"}
             ></ContainerImage>
           </div>
 
@@ -272,7 +275,8 @@ function Axis() {
             Height={"572px"}
           ></ContentBox>
 
-          <ContentBox
+          {/* removed for word count */}
+          {/* <ContentBox
             Title={"What Now?"}
             Body={
               "A unifying art direction to evoke a sense of awe in the student, and showcase that consulting wasn’t a linear process, but equal parts creative."
@@ -283,7 +287,7 @@ function Axis() {
             AltText={"Competing at Forward Vision Case Competition"}
             Width={"1085px"}
             Height={"158px"}
-          ></ContentBox>
+          ></ContentBox> */}
 
           <ContentBox
             Title={" Building the Vision"}
@@ -402,22 +406,18 @@ function Axis() {
           <MultiContentBox
             ID={"reflection"}
             Title={"⭐ What I learned"}
-            Reflection1={"💡 Designing within Constraints"}
+            Reflection1={"💡 Good Ideas Come From Everywhere"}
             Body1={
-              "As the sole student amongst a team of adults (developing an app designed for students), my perspective was invaluable for shaping the direction the product and its portrayal took. I got the amazing opportunity to drive a lot of the design decisions, lead research, and learn how and why to justify my decisions. One of my biggest regrets was that I wasn’t able to stay with the product for its end-to-end journey. As a result, I didn’t get to see a lot of my solutions come to fruition until a few months later when the product and webpage were officially launched and wasn’t able to see the subsequent results."
+              "I learned to balance my vision with my team’s, where collaboration fueled our weekly meetings, sparking innovative marketing initiatives and refining ideas through collective creativity."
             }
-            Reflection2={"🤔 Moderating my Ideas"}
+            Reflection2={"🧩 Chase Feedback... in Moderation"}
             Body2={
-              "Given the tiny size of the team, (it was just me, a backend developer, front end developer, and the CEOs) I had to learn to moderate the grandeur of my ideas. Solutions like a live app demo on the home page sound amazing on paper, but the actual implementation for both the backend and front end is a nightmare. "
-            }
-            Reflection3={"🧩 Working with Limited Data"}
-            Body3={
-              "As a startup working towards producing an mvp, we really had no data to work with. I had to learn to be scrappy, leading interviews, pressing my friends, and slipping the product into conversations to see how people perceived it. "
+              "At the start of my term, I would always ask for feedback on all my designs from the entire exec team. As time went on, I realized how unsustainable this was, asking 13+ people to nitpick every aspect of my design, while catering to each of their niches was way too time-consuming and hard. Now, I’m not saying feedback isn’t good -- feedback is great, I just needed to learn how to scope it appropriately, to avoid it being buried under a mountain of critique. "
             }
             LabelName={"Reflection"}
             LabelColor={"--red"}
           ></MultiContentBox>
-          <div className="flex flex-row justify-between gap-[1rem]">
+          <div className="flex flex-col lg:flex-row justify-between gap-[1rem]">
             <ContainerImage
               Image={AxisReflection1}
               alt={"A photo of me at my first every Axis business shoot"}
@@ -449,7 +449,7 @@ function Axis() {
               </a>
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </div>
   );
