@@ -173,9 +173,9 @@ function Axis() {
             </div> */}
             <ContainerImage
               Image={AxisCover}
-              // alt={"Cover Gif for Axis Consulting Case Study"}
-              // Width={"1080px"}
-              // Height={"675px"}
+              alt={"Cover Gif for Axis Consulting Case Study"}
+              Width={"1080px"}
+              Height={"675px"}
             ></ContainerImage>
             <div className="flex flex-col lg:flex-row justify-between">
               <div className="flex flex-col">

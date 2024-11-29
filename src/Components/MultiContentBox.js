@@ -14,7 +14,7 @@ function MultiContentBox({
   LabelColor,
 }) {
   return (
-    <div>
+    <section>
       <div className="flex flex-col gap-[0.625rem]">
         <Label name={LabelName} color={LabelColor} />
         <h2>{Title}</h2>
@@ -33,7 +33,7 @@ function MultiContentBox({
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
