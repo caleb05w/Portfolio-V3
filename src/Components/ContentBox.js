@@ -17,7 +17,7 @@ function ContentBox({
   return (
     <section>
       <div
-        className="lg:w-[100%] w-[100%] flex flex-col gap-[1.5rem] lg:gap-[2.5rem]"
+        className="lg:w-[100%] w-[100%] flex flex-col gap-[1.5rem] lg:gap-[1.6rem]"
         id={ID}
       >
         <Textbox
@@ -28,15 +28,17 @@ function ContentBox({
           LabelColor={LabelColor}
         ></Textbox>
 
-        <div className="object-cover">
-          <img
-            className=" w-full h-fit"
-            src={Image}
-            alt={AltText}
-            width={Width}
-            height={Height}
-            loading={Speed}
-          ></img>
+        <div className="w-[100]  ">
+          <div className="object-cover">
+            <img
+              className=" w-[100%] h-[100%]  mx-auto"
+              src={Image}
+              alt={AltText}
+              width={Width}
+              height={Height}
+              loading={Speed}
+            ></img>
+          </div>
         </div>
       </div>
     </section>

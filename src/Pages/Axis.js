@@ -6,6 +6,11 @@ import ContainerImage from "../Components/ContainerImage";
 import Textbox from "../Components/Textbox";
 import MultiContentBox from "../Components/MultiContentBox";
 import Hyperlink from "../Components/Hyperlink";
+
+//Icons
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { CiMail } from "react-icons/ci";
 import { FaArrowRight } from "react-icons/fa";
 
 /* Images */
@@ -29,6 +34,8 @@ import AxisContent_12 from "../assets/images/AxisContent_12.png";
 import AxisReflection1 from "../assets/images/AxisReflection1.png";
 import AxisReflection2 from "../assets/images/AxisReflection2.png";
 import AxisReflection3 from "../assets/images/AxisReflection3.png";
+
+/* Add a project summary and include the metrics of impact to catch attention at the top */
 
 function Axis() {
   const [isOpen, setIsOpen] = useState(false);
@@ -138,29 +145,20 @@ function Axis() {
       <div className=" fixed w-0 md:w-[17%] lg:w-[17%] flex flex-row justify-start lg:justify-center top-[90vh]">
         <div className="h-[100vh] w-[80%] flex flex-col gap-[1.5%]">
           <div className="flex flex-col min-h-[20vh]">
-            <div className="lg:flex  hidden flex-col gap-[1%] h-full">
-              <Hyperlink
-                Text={"Instagram"}
-                Link={"#problem"}
-                Color={"my-gray"}
-                HoverColor={"--purple"}
-                Display={"none"}
-              />
-              <Hyperlink
-                Text={"Website"}
-                Link={"#solution-ideation"}
-                Color={"my-gray"}
-                HoverColor={"--purple"}
-                Display={"none"}
-              />
+            <div className="lg:flex hidden flex-col gap-[1%] h-full">
+              <div className="flex gap-[0.6rem] ">
+                <FaGithub className="text-2xl text-my-gray hover:text-my-purple-dark ease-in-out duration-300 hover:cursor-pointer" />
+                <FaLinkedin className="text-2xl text-my-gray hover:text-my-purple-dark ease-in-out duration-300 hover:cursor-pointer" />
+                <CiMail className="text-2xl text-my-gray hover:text-my-purple-dark ease-in-out duration-300 hover:cursor-pointer" />
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="w-[100vw] flex flex-row justify-end lg:px-[3%] md:px-[3%] px-[7%]">
-        <section className="lg:w-[70vw] w-[95vw] flex flex-col gap-[4rem] md-[7rem] lg:gap-[9.375rem]">
-          <div className=" flex flex-col gap-[1rem] lg:gap-[2.125rem]" id="top">
+      <div className="w-[100vw] flex flex-row justify-end  lg:px-[3%] md:px-[3%] px-[7%]">
+        <section className="lg:w-[70vw] w-[95vw] flex flex-col gap-[4rem] md-[6rem] lg:gap-[8rem] ml-[5vw]">
+          <div className=" flex flex-col gap-[1rem] " id="top">
             <h5>Director of Design | 2024</h5>
             <h1>
               Re-Defining a Narrative: Curating a new Brand to Invoke Awe.

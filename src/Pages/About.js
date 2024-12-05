@@ -7,12 +7,17 @@ import Caleb1 from "../assets/images/Caleb1.png";
 import Caleb2 from "../assets/images/Caleb2.png";
 import Caleb3 from "../assets/images/Caleb3.png";
 
+//Icons
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { CiMail } from "react-icons/ci";
+
 const About = () => {
   return (
     <div className="w-[100vw] flex flex-row justify-center lg:px-[3%] md:px-[3%] px-[7%] pb-[3vh] lg:pb-[4vh]">
       <div className="lg:w-[70vw] w-[95vw] flex flex-col gap-[1rem] md-[2rem] lg:gap-[2.375rem]">
         <div className=" flex flex-col gap-[1rem] lg:gap-[1.125rem]" id="top">
-          <h5>Director of Design | 2024</h5>
+          <h5>Here's a little about me</h5>
           <h1>Designer by Day, Developer by Night</h1>
         </div>
         <div className="flex flex-col gap-[2rem]">
@@ -53,6 +58,14 @@ const About = () => {
             Width={"733.39px"}
             Height={"540px"}
           ></ContainerImage>
+        </div>
+        <div className="w-full flex flex-row justify-between">
+          <h5> Let's connect :D </h5>
+          <div className="flex gap-[0.6rem] ">
+            <FaGithub className="text-2xl text-my-gray hover:text-my-purple-dark ease-in-out duration-300 hover:cursor-pointer" />
+            <FaLinkedin className="text-2xl text-my-gray hover:text-my-purple-dark ease-in-out duration-300 hover:cursor-pointer" />
+            <CiMail className="text-2xl text-my-gray hover:text-my-purple-dark ease-in-out duration-300 hover:cursor-pointer" />
+          </div>
         </div>
       </div>
     </div>

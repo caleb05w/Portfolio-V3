@@ -1,10 +1,23 @@
 import React from "react";
 import { MdArrowOutward } from "react-icons/md";
 
-function Hyperlink({ Text, Link, Color, HoverColor, Display }) {
+function Hyperlink({
+  Text,
+  Link,
+  Color,
+  HoverColor,
+  Display,
+  Download,
+  Target,
+}) {
   return (
     <div className="group w-fit">
-      <a href={Link}>
+      <a
+        href={Link}
+        target={Target ? "_blank" : "_self"}
+        rel="noopener noreferrer"
+        download={Download}
+      >
         <h5
           className="ease-in-out duration-300 flex flex-row group-hover:text-[var(--hover-color)] whitespace-nowrap"
           style={{

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Hyperlink from "./Hyperlink";
 import DynamicHyperlink from "./DynamicHyperlink";
+import Resume from "../assets/Caleb_Wu_Resume.pdf";
 
 /* Icons */
 import { IoMenu } from "react-icons/io5";
@@ -23,12 +24,12 @@ function Navbar() {
   return (
     <nav className="mb-[8vh] md:mb-[5vh] lg:mb-[3%] w-full ">
       <div
-        className="z-20 flex flex-row justify-between fixed h-[fit] lg:h-[10%] w-full
+        className="z-20 flex flex-row justify-between fixed h-[fit] lg:h-[6%] w-full
         top-0 left-0 bg-white backdrop-blur-[8px]"
       ></div>
 
       <div
-        className={`flex flex-col lg:flex-row justify-between w-full h-fit z-30 py-[5%] lg:py-[2%] lg:px-[3%] fixed lg:mt-[0%] mt-[-3%] pt-[6vh] lg:pb-0 pb-[4vh] rounded-[0.5rem] lg:rounded-none ease-in-out duration-[500ms] lg:bg-transparent ${
+        className={`flex flex-col lg:flex-row justify-between w-full h-fit z-30 py-[5%] lg:py-[1%] lg:px-[3%] fixed lg:mt-[0%] mt-[-3%] pt-[6vh] lg:pb-0 pb-[4vh] rounded-[0.5rem] lg:rounded-none ease-in-out duration-[500ms] lg:bg-transparent ${
           isOpen ? "bg-black" : "bg-white"
         }`}
       >
@@ -41,6 +42,7 @@ function Navbar() {
               HoverColor={"--purple"}
               Display={"flex"}
               AdditionalClass={isActive("/")}
+              Target={true}
             />
           </div>
 
@@ -66,10 +68,11 @@ function Navbar() {
         >
           <Hyperlink
             Text={"Resume"}
-            Link={"/gallery"}
+            Link={Resume}
             Color={"my-black"}
             HoverColor={"--purple"}
             Display={"none"}
+            Download={"Caleb Wu Resume"}
           />
           <Hyperlink
             Text={"Gallery"}

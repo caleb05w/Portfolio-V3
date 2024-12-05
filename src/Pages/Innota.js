@@ -5,8 +5,13 @@ import ContentBox from "../Components/ContentBox";
 import ContainerImage from "../Components/ContainerImage";
 import Textbox from "../Components/Textbox";
 import MultiContentBox from "../Components/MultiContentBox";
-import { FaArrowRight } from "react-icons/fa";
 import Hyperlink from "../Components/Hyperlink";
+
+//Icons
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { CiMail } from "react-icons/ci";
+import { FaArrowRight } from "react-icons/fa";
 
 /* Images */
 import InnotaCover from "../assets/images/InnotaCover.png";
@@ -129,7 +134,8 @@ function Innota() {
         <div className="h-[100vh] w-[80%] flex flex-col gap-[1.5%]">
           <div className="flex flex-col min-h-[20vh]">
             <div className="lg:flex  hidden flex-col gap-[1%] h-full">
-              <Hyperlink
+              {/* This code will be used in the future when I have time to finish the portfolio */}
+              {/* <Hyperlink
                 Text={"Instagram"}
                 Link={"#problem"}
                 Color={"my-gray"}
@@ -142,16 +148,21 @@ function Innota() {
                 Color={"my-gray"}
                 HoverColor={"--purple"}
                 Display={"none"}
-              />
+              /> */}
+              <div className="flex gap-[0.6rem] ">
+                <FaGithub className="text-2xl text-my-gray hover:text-my-purple-dark ease-in-out duration-300 hover:cursor-pointer" />
+                <FaLinkedin className="text-2xl text-my-gray hover:text-my-purple-dark ease-in-out duration-300 hover:cursor-pointer" />
+                <CiMail className="text-2xl text-my-gray hover:text-my-purple-dark ease-in-out duration-300 hover:cursor-pointer" />
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <div className="w-[100vw] flex flex-row justify-end lg:px-[3%] md:px-[3%] px-[7%]">
-        <div className="lg:w-[70vw] w-[95vw] flex flex-col gap-[4rem] md-[7rem] lg:gap-[9.375rem]">
-          <div className=" flex flex-col gap-[1rem] lg:gap-[2.125rem]" id="top">
-            <h5>Director of Design | 2024</h5>
+        <div className="lg:w-[70vw] w-[95vw] flex flex-col gap-[4rem] md-[6rem] lg:gap-[8rem]">
+          <div className=" flex flex-col gap-[1rem]" id="top">
+            <h5>Product Designer | 2024</h5>
             <h1>
               Re-Defining a Narrative: Curating a new Brand to Invoke Awe.
             </h1>
