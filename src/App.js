@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <link rel="stylesheet" href="//input.css"></link>
-      <Router>
+    <Router>
         <Navbar />
         <AnimatedRoutes />
         <Footer />

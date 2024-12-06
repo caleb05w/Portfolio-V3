@@ -13,6 +13,7 @@ function ContentBox({
   AltText,
   Width,
   Height,
+  srcset,
 }) {
   return (
     <section>
@@ -26,6 +27,7 @@ function ContentBox({
           Body2={Body2}
           LabelName={LabelName}
           LabelColor={LabelColor}
+          
         ></Textbox>
 
         <div className="w-[100]  ">
@@ -37,6 +39,7 @@ function ContentBox({
               width={Width}
               height={Height}
               loading={Speed}
+              srcSet={srcset}
             ></img>
           </div>
         </div>

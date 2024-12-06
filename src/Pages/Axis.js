@@ -35,8 +35,6 @@ import AxisReflection1 from "../assets/images/AxisReflection1.png";
 import AxisReflection2 from "../assets/images/AxisReflection2.png";
 import AxisReflection3 from "../assets/images/AxisReflection3.png";
 
-/* Add a project summary and include the metrics of impact to catch attention at the top */
-
 function Axis() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -197,9 +195,15 @@ function Axis() {
 
           <div className="flex flex-col gap-[2.5rem]">
             <Textbox
-              Title={"About Axis"}
+              Title={"About The Client"}
               Body={
-                "Axis Consulting is a student-run pro bono business club that pairs aspiring consultants with real world clients."
+                "Axis Consulting is a student-run pro bono business club. It’s focused on creating opportunities for prospective consultants (anywhere from 2nd - to 5th year), delivering value for students through driving personal growth, and instilling community impact through the positive solutions we bring to the clients we work alongside.."
+              }
+            ></Textbox>
+            <Textbox
+              Title={"My Role"}
+              Body={
+                "As the Director of Design and marketing, I was responsible for managing Axis Consulting’s online identity and its many portrayal mediums. I acted as a crossroads for every graphical asset, animation, post, and reel posted on our social media channels. "
               }
             ></Textbox>
           </div>
@@ -290,7 +294,7 @@ function Axis() {
           <ContentBox
             Title={" Building the Vision"}
             Body={
-              "The moodboard was unified by common “evokers of wonder”. These were things that made you go woah, creating a sense of awe."
+              "I started the art direction ideation by creating a moodboard, inspired by  unified by common “evokers of wonder”. These were things that made you go woah, creating a sense of awe."
             }
             LabelName={"Solution Ideation"}
             LabelColor={"--orange"}
@@ -303,7 +307,7 @@ function Axis() {
           <ContentBox
             Title={" The Direction"}
             Body={
-              "The direction chosen to drive the art direction was stars in the night sky. The pitch-black sky was the perfect canvas to justify simple graphics and inspiring copy. "
+              "Moving forwards from the mood board, I chose a singular point to drive the direction forward: The night sky. This enveloping darkness of the pitch-black sky was the perfect canvas to justify simple graphics and inspiring copy. "
             }
             LabelName={"Solution Ideation"}
             LabelColor={"--purple"}
@@ -314,24 +318,10 @@ function Axis() {
           ></ContentBox>
 
           <ContentBox
-            ID={"implementation-strategy"}
-            Title={" Strategies of Implementation"}
-            Body={
-              "To bring this vision to life, I came up with 3 tangible initiatives to drive my team and I’s progress through the rest of the year."
-            }
-            LabelName={"Implementation Strategy"}
-            LabelColor={"--purple"}
-            Image={AxisContent_7}
-            AltText={"Strategies for implementing the new art direction"}
-            Width={"1085px"}
-            Height={"347px"}
-          ></ContentBox>
-
-          <ContentBox
             ID={"design-decisions"}
             Title={" Design Pillars"}
             Body={
-              "From the mood board, I developed three pillars to guide the art direction, inspired by stars in the night sky, luminescence to draw wonder, Noise to convey movement, and Constellations to engage empty space."
+              "To ensure graphical consistency when creating assets, I developed three pillars to guide the art direction, inspired by stars in the night sky, luminescence to draw wonder, Noise to convey movement, and constellations to engage empty space."
             }
             LabelName={"Design Decisions"}
             LabelColor={"--purple"}
@@ -344,7 +334,7 @@ function Axis() {
           <ContentBox
             Title={" Art Direction"}
             Body={
-              "Apfel Grotesk and Helvetica were chosen for their distinct legibility on black canvas’s. The colors consisted of the trademark Axis blue to ensure recognizability of the legacy brand across the rebrand."
+              "Apfel Grotesk and Helvetica were chosen for their distinct legibility on black canvas’s. I adpated the trademark Axis blue to ensure recognizability of the legacy brand across the rebrand."
             }
             LabelName={"Design Decisions"}
             LabelColor={"--purple"}
@@ -352,6 +342,20 @@ function Axis() {
             AltText={"Axis's new type and color pallete"}
             Width={"1085px"}
             Height={"530px"}
+          ></ContentBox>
+
+          <ContentBox
+            ID={"implementation-strategy"}
+            Title={" Strategies of Implementation"}
+            Body={
+              "With my art direction complete, I focused on how I could bring it to life, coming up with 3 different projects to drive the directions visual representation across Axis."
+            }
+            LabelName={"Implementation Strategy"}
+            LabelColor={"--purple"}
+            Image={AxisContent_7}
+            AltText={"Strategies for implementing the new art direction"}
+            Width={"1085px"}
+            Height={"347px"}
           ></ContentBox>
 
           <ContentBox
@@ -373,10 +377,13 @@ function Axis() {
           <ContentBox
             Title={"The Crowning Achievement"}
             Body={
-              "Classmates often asked, “What are you guys doing this year?” as Beedie clubs traditionally market event-by-event. To address this, I created an engaging motion graphic timeline to provide clarity and build on past successes."
+              "Aftering creating the posts, I started looking for other ways to engage users. "
+            }
+            Body2={
+              "Classmates kept approaching me about Axis and asking questions. One of the most popular questions I would receive was: “What are you guys doing this year?”.  Beedie clubs traditionally market event-by-event, leaving students in the dark about what’s next. To address this, I created a motion graphic outlining our timeline in an engaging way, building on the success of the previous one."
             }
             LabelName={"Going Beyond the Scope"}
-            LabelColor={"--turquoise"}
+            LabelColor={"--emerald"}
             Image={AxisContent_11}
             AltText={
               "The motion graphic timeline I created for Axis Consulting"
@@ -389,7 +396,7 @@ function Axis() {
             ID={"impact"}
             Title={"⭐ My Impact"}
             Body={
-              "The rebrand was a success, launched in July, it boosted LinkedIn impressions by 500%, Instagram reach by 101%, and applications by 40%. The feedback from the team and alumni was inspiring."
+              "The rebrand was a massive success. Our LinkedIn impressions spiked by almost 500%, and our Instagram content reached 101% more accounts. Our cumulative applicant pool experienced a 40% increase, and the amount of overwhelming feedback from the team and alumni was inspiring."
             }
             LabelName={"Key Take Away(s)"}
             LabelColor={"--yellow"}
