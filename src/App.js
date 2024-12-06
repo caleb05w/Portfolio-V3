@@ -4,6 +4,9 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Footer from "./Components/Footer.js";
 import Navbar from "./Components/Navbar.js";
 
+// Adding analytics 
+import { Analytics } from "@vercel/analytics/react"
+
 
 import AnimatedRoutes from "./Components/AnimatedRoutes.js";
 
@@ -15,6 +18,7 @@ function App() {
         <Navbar />
         <AnimatedRoutes />
         <Footer />
+        <Analytics />
       </Router>
     </div>
   );
