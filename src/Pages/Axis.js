@@ -34,6 +34,8 @@ import AxisContent_12 from "../assets/images/AxisContent_12.png";
 import AxisReflection1 from "../assets/images/AxisReflection1.png";
 import AxisReflection2 from "../assets/images/AxisReflection2.png";
 import AxisReflection3 from "../assets/images/AxisReflection3.png";
+import AxisJira from "../assets/images/AxisJira.png";
+import AxisFeedback from "../assets/images/AxisFeedback.png";
 
 function Axis() {
   const [isOpen, setIsOpen] = useState(false);
@@ -236,7 +238,7 @@ function Axis() {
 
           <ContentBox
             ID={"problem"}
-            Title={"The Problem"}
+            Title={"⚠️ The Problem"}
             Body={
               "Axis’s current brand identity was cohesive, and disorganized, and lacked any compelling or distinguishable traits outside of the insistent use of blue, lacking a unifying art direction. "
             }
@@ -249,7 +251,7 @@ function Axis() {
           ></ContentBox>
 
           <ContentBox
-            Title={"Conducting Competitive Analysis"}
+            Title={"🔍 Conducting Competitive Analysis"}
             Body={
               "This meant it wasn’t able to stand out against SFU’s other 15+ business clubs.They all share similar hiring dates, similar events, and cater to the same body of students."
             }
@@ -264,8 +266,23 @@ function Axis() {
           ></ContentBox>
 
           <ContentBox
+            Title={"📝 Gathering Feedback"}
+            Body={
+              "I conducted interviews to see how they perceived Axis’s current branding. Overall, Students were afraid they wouldn’t be able to grow, constricted to a linear path, and that an intensive work environment would deter friendship."
+            }
+            LabelName={"Problem Discovery #2"}
+            LabelColor={"--red"}
+            Image={AxisFeedback}
+            Alt={
+              "Compilation of Sticky notes on user feedback I received on Axis"
+            }
+            Width={"1085px"}
+            Height={"286px"}
+          ></ContentBox>
+
+          <ContentBox
             ID={"solution-ideation"}
-            Title={"What Now?"}
+            Title={"🤔 What Now?"}
             Body={
               "With these two pain points, I created a unifying vision to guide my art direction."
             }
@@ -292,7 +309,7 @@ function Axis() {
           ></ContentBox> */}
 
           <ContentBox
-            Title={" Building the Vision"}
+            Title={"🛠️ Building the Vision"}
             Body={
               "I started the art direction ideation by creating a moodboard, inspired by  unified by common “evokers of wonder”. These were things that made you go woah, creating a sense of awe."
             }
@@ -305,25 +322,27 @@ function Axis() {
           ></ContentBox>
 
           <ContentBox
-            Title={" The Direction"}
+            Title={"🎯The Direction"}
             Body={
               "Moving forwards from the mood board, I chose a singular point to drive the direction forward: The night sky. This enveloping darkness of the pitch-black sky was the perfect canvas to justify simple graphics and inspiring copy. "
             }
             LabelName={"Solution Ideation"}
             LabelColor={"--purple"}
             Image={AxisContent_6}
-            AltText={"The inspiration that birthed the art direction"}
+            AltText={
+              "The Axis Jira board and all our upcoming tasks and projects going into the new year."
+            }
             Width={"1085px"}
             Height={"530px"}
           ></ContentBox>
 
           <ContentBox
             ID={"design-decisions"}
-            Title={" Design Pillars"}
+            Title={"🏛️ Design Pillars"}
             Body={
               "To ensure graphical consistency when creating assets, I developed three pillars to guide the art direction, inspired by stars in the night sky, luminescence to draw wonder, Noise to convey movement, and constellations to engage empty space."
             }
-            LabelName={"Design Decisions"}
+            LabelName={"🔤 Design Decisions"}
             LabelColor={"--purple"}
             Image={AxisContent_8}
             AltText={"The 3 pillars that drove the new art direction"}
@@ -332,7 +351,7 @@ function Axis() {
           ></ContentBox>
 
           <ContentBox
-            Title={" Art Direction"}
+            Title={"🎨 Art Direction"}
             Body={
               "Apfel Grotesk and Helvetica were chosen for their distinct legibility on black canvas’s. I adpated the trademark Axis blue to ensure recognizability of the legacy brand across the rebrand."
             }
@@ -346,7 +365,7 @@ function Axis() {
 
           <ContentBox
             ID={"implementation-strategy"}
-            Title={" Strategies of Implementation"}
+            Title={"⚙️ Strategies of Implementation"}
             Body={
               "With my art direction complete, I focused on how I could bring it to life, coming up with 3 different projects to drive the directions visual representation across Axis."
             }
@@ -360,7 +379,7 @@ function Axis() {
 
           <ContentBox
             ID={"work-showcase"}
-            Title={" Work Showcase"}
+            Title={"💼 Work Showcase"}
             Body={
               "After finalizing the graphical vision, I began translating it into posters for our various initiatives. The busy noise, blue highlights, and thin lines became an Axis trademark."
             }
@@ -375,7 +394,7 @@ function Axis() {
           ></ContentBox>
 
           <ContentBox
-            Title={"The Crowning Achievement"}
+            Title={"👑 The Crowning Achievement"}
             Body={
               "Aftering creating the posts, I started looking for other ways to engage users. "
             }
@@ -393,8 +412,26 @@ function Axis() {
           ></ContentBox>
 
           <ContentBox
+            Title={"📅 So, what's next?"}
+            Body={
+              "Just like Kobe said in the 2009 NBA Finals, the “job’s not finished”. With 4 months left in my term, I still have a lot of different tasks to close, decisions to headline, and opportunities to produce more content to elevate our upcoming flagship events."
+            }
+            Body2={
+              "There are  still a lot of different holes in Axis’s overall brand identity, such as our unfinished website (as the sole developer, it’s a slow process!), inconsistencies on social media postings, and revolve, our big flagship event in March!"
+            }
+            LabelName={"Moving Forwards"}
+            LabelColor={"--emerald"}
+            Image={AxisJira}
+            AltText={
+              "The motion graphic timeline I created for Axis Consulting"
+            }
+            Width={"1085px"}
+            Height={"540px"}
+          ></ContentBox>
+
+          <ContentBox
             ID={"impact"}
-            Title={"⭐ My Impact"}
+            Title={"🏆 My Impact"}
             Body={
               "The rebrand was a massive success. Our LinkedIn impressions spiked by almost 500%, and our Instagram content reached 101% more accounts. Our cumulative applicant pool experienced a 40% increase, and the amount of overwhelming feedback from the team and alumni was inspiring."
             }

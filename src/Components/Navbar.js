@@ -29,7 +29,7 @@ function Navbar() {
       ></div>
 
       <div
-        className={`flex flex-col lg:flex-row justify-between w-full h-fit z-30 py-[5%] lg:py-[1%] lg:px-[3%] fixed lg:mt-[0%] mt-[-3%] pt-[6vh] lg:pb-0 pb-[4vh] rounded-[0.5rem] lg:rounded-none ease-in-out duration-[500ms] lg:bg-transparent ${
+        className={`flex flex-col lg:flex-row justify-between w-full h-fit z-30 py-[5%] lg:py-[2%] lg:px-[3%] fixed lg:mt-[0%] mt-[-3%] pt-[6vh] lg:pb-0 pb-[4vh] rounded-[0.5rem] lg:rounded-none ease-in-out duration-[500ms] lg:bg-transparent ${
           isOpen ? "bg-black" : "bg-white"
         }`}
       >
