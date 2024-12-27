@@ -61,33 +61,35 @@ function Navbar() {
             </span>
           </button>
         </div>
-        <div
-          className={`flex flex-col lg:flex-row lg:gap-0 gap-[0.5rem] w-fit lg:w-[20%]  lg:px-0 px-[7%] lg:mt-0 justify-between z-10 ease-in-out duration-300 ${
-            isOpen ? "mt-[6vh]" : "mt-[-20vh]"
-          }`}
-        >
-          <Hyperlink
-            Text={"Resume"}
-            Link={Resume}
-            Color={"my-black"}
-            HoverColor={"--purple"}
-            Display={"none"}
-            Download={"Caleb Wu Resume"}
-          />
-          <Hyperlink
-            Text={"Gallery"}
-            Link={"/gallery"}
-            Color={"my-black"}
-            HoverColor={"--purple"}
-            Display={"none"}
-          />
-          <Hyperlink
-            Text={"About"}
-            Link={"/About"}
-            Color={"my-black"}
-            HoverColor={"--purple"}
-            Display={"none"}
-          />
+        <div className=" lg:w-fit w-full flex flex-row lg:justify-end ">
+          <div
+            className={` flex flex-col lg:flex-row lg:gap-[2rem] lg:w-full w-full gap-[1rem] lg:px-0 px-[7%] lg:mt-0 justify-between z-10 ease-in-out duration-300 overflow-hidden lg:h-full  ${
+              isOpen ? "mt-[6vh] h-[15vh]" : "mt-[-10vh] h-[0vh]"
+            }`}
+          >
+            <Hyperlink
+              Text={"Resume"}
+              Link={Resume}
+              Color={"my-black"}
+              HoverColor={"--purple"}
+              Display={"none"}
+              Download={"Caleb Wu Resume"}
+            />
+            <Hyperlink
+              Text={"Gallery"}
+              Link={"/gallery"}
+              Color={"my-black"}
+              HoverColor={"--purple"}
+              Display={"none"}
+            />
+            <Hyperlink
+              Text={"About"}
+              Link={"/About"}
+              Color={"my-black"}
+              HoverColor={"--purple"}
+              Display={"none"}
+            />
+          </div>
         </div>
       </div>
       <div className="pb-[3%]"></div>
