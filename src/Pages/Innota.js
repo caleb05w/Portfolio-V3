@@ -54,7 +54,7 @@ function Innota() {
 
           <nav className="text-my-black lg:relative fixed z-10">
             <div className="lg:flex flex flex-row justify-between lg:w-fit  w-[90vw]">
-              <h3 className="hidden lg:block">Hello! I'm a sidebar.</h3>
+              <h3 className="hidden lg:block">I'm a sidebar.</h3>
               <button
                 onClick={toggleNavbar}
                 aria-label={
@@ -159,8 +159,8 @@ function Innota() {
         </div>
       </div>
 
-      <div className="w-[100vw] flex flex-row justify-end lg:px-[3%] md:px-[3%] px-[7%]">
-        <div className="lg:w-[70vw] w-[95vw] flex flex-col gap-[4rem] md-[6rem] lg:gap-[8rem]">
+      <div className="w-[100vw] flex flex-row justify-center lg:px-[3%] md:px-[3%] px-[7%]">
+        <div className="lg:w-[50vw] w-[95vw] flex flex-col gap-[4rem] md-[6rem] lg:gap-[8rem]">
           <div className=" flex flex-col gap-[1rem]" id="top">
             <h5>Product Designer | 2024</h5>
             <h1>

@@ -58,9 +58,9 @@ function Axis() {
         <div className="lg:h-[100vh] h-fit lg:mt-[15vh] flex flex-col gap-[1.5%]">
           {/* Navbar Header */}
 
-          <nav className=" lg:relative fixed z-10">
-            <div className="lg:flex flex flex-row justify-between lg:w-fit  w-[90vw]">
-              <h3 className="hidden  lg:block">Hello! I'm a sidebar.</h3>
+          <nav className=" lg:relative fixed mr-[0rem] slowEase duration-[800ms]">
+            <div className="lg:flex flex flex-row justify-between lg:w-fit w-[90vw] ">
+              <h3 className="hidden  lg:block">I'm a sidebar.</h3>
               <button
                 onClick={toggleNavbar}
                 aria-label={
@@ -156,8 +156,8 @@ function Axis() {
         </div>
       </div>
 
-      <div className="w-[100vw] flex flex-row justify-end  lg:px-[3%] md:px-[3%] px-[7%]">
-        <section className="lg:w-[70vw] w-[95vw] flex flex-col gap-[4rem] md-[6rem] lg:gap-[8rem] ml-[5vw]">
+      <div className="w-[100vw] flex flex-row justify-center lg:px-[3%] md:px-[3%] px-[7%]">
+        <section className="lg:w-[50vw]  justify-center items-center w-[95vw] flex flex-col gap-[4rem] md-[6rem] lg:gap-[8rem] ml-[5vw]">
           <div className=" flex flex-col gap-[1rem] " id="top">
             <h5>Director of Design | 2024</h5>
             <h1>
@@ -240,7 +240,7 @@ function Axis() {
             ID={"problem"}
             Title={"⚠️ The Problem"}
             Body={
-              "Axis’s current brand identity was cohesive, and disorganized, and lacked any compelling or distinguishable traits outside of the insistent use of blue, lacking a unifying art direction. "
+              "Axis’s current brand identity was incohesive disorganized, and lacked any compelling or distinguishable traits outside of the insistent use of blue. As a result, it lacked any sort of unifying direciton"
             }
             LabelName={"The Issue"}
             LabelColor={"--red"}
